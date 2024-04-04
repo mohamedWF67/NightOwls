@@ -7,9 +7,6 @@ body{
     font-weight: bold ;
     display: flex;
     flex-direction: column;
-}
-#index{
-    margin: 7.5px;
     .dropdown {
         position: relative;
         display: inline-block;
@@ -31,6 +28,9 @@ body{
     .dropdown:hover .dropdown-content {
         display: block;
     }
+}
+#index{
+    margin: 7.5px;
 }
 #reglog {
     * {
@@ -184,6 +184,17 @@ body{
         text-decoration: underline;
     }
 }
+#Prebuilt{
+    margin: 7.5px;
+    .grid-tags{
+        margin-top: 20px;
+    }
+    .cg{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
 button{
     cursor: pointer;
     border: none;
@@ -315,27 +326,31 @@ main{
         padding: 10px;
         font-size: 30px;
         border-radius: 20px;
-        min-width: 300px;
-        height: 300px;
+        width: 300px;
+        height: 440px;
         display: flex;
         flex-direction: column;
         p{
-            width: 100%;
-            height: 62px;
+            width: 300px;
+            height: auto;
             font-size: 26px;
             margin: 0;
             color: var(--text);
             text-align: center;
             overflow: hidden;
+            margin-bottom: 9px;
         }
         img
         {
+            background-color: white;
             position: relative;
             border-radius: 20px;
-            width: 96%;
-            height: 54%;
+            padding: 10px;
+            width: calc(100% - 30px);
+            max-height: 260px;
             margin: 10px 10px;
             align-self: center;
+            display: flex;
             box-shadow: var(--shadow) 0 0 5px 1px;
         }
     }
@@ -343,10 +358,14 @@ main{
 .btn{
     border-radius: 20px;
     min-width: 100px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
     height: 30px;
     align-self: center;
     margin-top: auto;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     background-color: var(--accent);
     box-shadow: var(--shadow) 0 0 6px;
     color: ghostwhite;
@@ -402,7 +421,7 @@ main{
     }
 }
 :root {
-    --text: #050316;
+    --text: #000000;
     --background: #efeafc;
     --primary: #2a2461;
     --secondary: #8076d5;
@@ -412,7 +431,7 @@ main{
     --shadow: rgba(0,0,0,0.6);
 }
 .dark{
-    --text: #ebe9fc;
+    --text: #ffffff;
     --background: #120f1a;
     --primary: #a49edb;
     --secondary: #342a88;
