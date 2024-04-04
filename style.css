@@ -29,6 +29,20 @@ body{
         display: block;
     }
 }
+::-webkit-scrollbar{
+    width: 1em;
+}
+::-webkit-scrollbar-track{
+    background: blue;
+    border-radius: 20px;
+    margin: 10px;
+    border: 10px solid hsl(120 75% 50% / 1);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--text);
+    border-radius: 20px;
+
+}
 #index{
     margin: 7.5px;
 }
@@ -313,6 +327,7 @@ main{
     text-shadow: 2px 2px  8px var(--accent);
 }
 .new-arrival-grid{
+    justify-content: left;
     display: flex;
     gap: 15px;
     padding: 25px;
@@ -332,26 +347,38 @@ main{
         flex-direction: column;
         p{
             width: 300px;
-            height: auto;
+            height: 140px;
             font-size: 26px;
             margin: 0;
             color: var(--text);
             text-align: center;
             overflow: hidden;
-            margin-bottom: 9px;
+
+        }
+        .arimg{
+            height: 260px;
+            max-height: 260px;
+            min-height: 260px;
+            width: 280px;
+            margin: 10px 0 0;
+            box-shadow: var(--shadow) 0 0 5px 1px;
+            align-self: center;
+            position: relative;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
         }
         img
         {
-            background-color: white;
+            padding: 0 ;
+            justify-content: center;
+            margin: auto 10px;
             position: relative;
-            border-radius: 20px;
-            padding: 10px;
-            width: calc(100% - 30px);
-            max-height: 260px;
-            margin: 10px 10px;
+            width: calc(100% - 40px);
+            height: calc(100% - 40px);
+            object-fit: contain;
             align-self: center;
-            display: flex;
-            box-shadow: var(--shadow) 0 0 5px 1px;
         }
     }
 }
