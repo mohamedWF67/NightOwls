@@ -29,17 +29,18 @@ body{
         display: block;
     }
 }
+*{
+    transition: all 0.3s;
+}
 ::-webkit-scrollbar{
     width: 1em;
 }
 ::-webkit-scrollbar-track{
-    background: blue;
     border-radius: 20px;
-    margin: 10px;
-    border: 10px solid hsl(120 75% 50% / 1);
+    margin: 10px 0;
 }
 ::-webkit-scrollbar-thumb{
-    background: var(--text);
+    background: var(--accent);
     border-radius: 20px;
 
 }
@@ -321,10 +322,32 @@ main{
     }
 }
 .grid-tags{
-    font-size: 30px;
-    margin: 15px 40px 0 40px;
-    color: var(--text);
-    text-shadow: 2px 2px  8px var(--accent);
+    margin: 15px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    i{
+        color: var(--text);
+        font-size: 28px;
+    }
+    p{
+        align-self: center;
+        font-size: 30px;
+        margin: 0 40px 0 40px;
+        color: var(--text);
+        text-shadow: 2px 2px  8px var(--accent);
+    }
+    .grid-mover{
+        align-self: center;
+        margin: 0 40px 0 0;
+    }
+    i:hover {
+        text-shadow: var(--accent) 0 0 32px;
+        transform: scale(150%);
+    }
+    i:active {
+        text-shadow: var(--shadow) 0 0 7px;
+        transform: scale(95%);
+    }
 }
 .new-arrival-grid{
     justify-content: left;
@@ -413,7 +436,7 @@ main{
 }
 .footer {
     border-radius: 20px;
-    margin: 0;
+    margin: 10px 0 0 0;
     justify-content: space-evenly;
     background-color: rgba(255, 255, 255, 0.074);
     display: flex;

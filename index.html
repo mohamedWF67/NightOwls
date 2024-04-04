@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <title>Night Owls</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
 <div id="index">
@@ -62,8 +62,11 @@
             </iframe>
         </div>
     </div>
-    <p class="grid-tags">New arrivals</p>
-    <div class="new-arrival-grid">
+    <div class="grid-tags"><p>New Arrivals</p><div class="grid-mover">
+        <button role="button" class="left" onclick="nascrolll()"><i class='bx bx-chevron-left'></i></button>
+        <button role="button" class="scroll-right" onclick="nascrollr()"><i class='bx bx-chevron-right'></i></button>
+    </div></div>
+    <div class="new-arrival-grid na">
         <div class="argrid ar">
             <div class="arimg"><img src="products/laptops/6541332_sd.jpg"></div>
             <p> ASUS - ROG Zephyrus M16 16" 240Hz Gaming Laptop QHD - Intel 13th Gen Core i9 with 16GB Memory-NVIDIA GeForce RTX 4070-1TB SSD - Off Black</p>
@@ -96,7 +99,7 @@
         </div>
     </div>
     <p class="grid-tags">Best sellers</p>
-    <div class="new-arrival-grid cg">
+    <div class="new-arrival-grid cg bs">
         <div class="argrid ar">
             <div class="arimg"><img src="products/laptops/flow%20x16.jpg"></div>
             <p>ASUS - ROG Flow X16 16" Touchscreen Gaming Laptop QHD-Intel Core i9 with 16GB DDR5 Memory-NVIDIA GeForce RTX 4060 V8G -1TB SSD - Off Black</p>
@@ -128,8 +131,11 @@
             <button role="button" class="btn">44,035 EGP</button>
         </div>
     </div>
-    <p class="grid-tags">Pre Built PCs</p>
-    <div class="new-arrival-grid cg">
+    <div class="grid-tags"><p>Pre Built PCs</p><div class="grid-mover">
+        <button role="button" class="left" onclick="prescrolll()"><i class='bx bx-chevron-left'></i></button>
+        <button role="button" class="scroll-right" onclick="prescrollr()"><i class='bx bx-chevron-right'></i></button>
+    </div></div>
+    <div class="new-arrival-grid cg pre">
         <div class="argrid ar">
             <div class="arimg"><img src="products/pre%20builts/1709195431-player-1-base-ww-02-26-24-hero-black-badge.png"></div>
             <p>NZXT Player: One i5-12400F, RTX™ 3050, 16GB DDR5-5200, 500GB NVMe</p>
@@ -222,9 +228,16 @@
 </footer>
 
 <script>
+    let pre = document.querySelector(".pre");
+    let na = document.querySelector(".na");
+    function nascrollr(){na.scrollBy(300,0)}
+    function nascrolll(){na.scrollBy(-300,0);}
+    function prescrollr(){pre.scrollBy(300,0)}
+    function prescrolll(){pre.scrollBy(-300,0);}
+    pre.style.scrollBehavior = "smooth";
+    na.style.scrollBehavior = "smooth";
 
     var icon = document.getElementById("dark");
-
     icon.onclick = function () {
         document.body.classList.toggle("dark")
     }
