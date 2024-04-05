@@ -98,7 +98,10 @@
             <button role="button" class="btn">250 EGP</button>
         </div>
     </div>
-    <p class="grid-tags">Best sellers</p>
+    <div class="grid-tags"><p>Best Sellers</p><div class="grid-mover">
+        <button role="button" class="left" onclick="bsscrolll()"><i class='bx bx-chevron-left'></i></button>
+        <button role="button" class="scroll-right" onclick="bsscrollr()"><i class='bx bx-chevron-right'></i></button>
+    </div></div>
     <div class="new-arrival-grid cg bs">
         <div class="argrid ar">
             <div class="arimg"><img src="products/laptops/flow%20x16.jpg"></div>
@@ -229,12 +232,16 @@
 <script>
     let pre = document.querySelector(".pre");
     let na = document.querySelector(".na");
+    let bs = document.querySelector(".bs");
+    function bsscrollr(){bs.scrollBy(300,0)}
+    function bsscrolll(){bs.scrollBy(-300,0);}
     function nascrollr(){na.scrollBy(300,0)}
     function nascrolll(){na.scrollBy(-300,0);}
     function prescrollr(){pre.scrollBy(300,0)}
     function prescrolll(){pre.scrollBy(-300,0);}
     pre.style.scrollBehavior = "smooth";
     na.style.scrollBehavior = "smooth";
+    bs.style.scrollBehavior = "smooth";
 
     var icon = document.getElementById("dark");
     icon.onclick = function () {
