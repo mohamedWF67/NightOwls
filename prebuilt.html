@@ -2,24 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <title>prebuilt PC</title>
 </head>
 <body>
 <div id="Prebuilt">
     <header>
+        <div class="hamburger">
+            <ul>
+                <li><a class="active" href="index.html">HOME</a></li>
+                <hr>
+                <div class="dropmenu">
+                    <li><label for="ass">
+                        <input id="ass" class="dropmenu-btn" type="checkbox">
+                        <a>Accessories<i class='bx bx-chevron-down'></i></a>
+                    </label>
+                    </li>
+                    <div class="dropmenu-content ass">
+                        <li><a href="#">Gaming</a>
+                        <li><a href="#">Setup</a>
+                        <li><a href="#">Collections</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="dropmenu">
+                    <li><label for="dh">
+                        <input id="dh" class="dropmenu-btn" type="checkbox">
+                        <a>Devices and hardware<i class='bx bx-chevron-down'></i></a></i>
+                    </label>
+                    </li>
+                    <div class="dropmenu-content  dh">
+                        <li><a href="prebuilt.html">Pre built PC</a>
+                        <li><a href="#">Laptops and tablets</a>
+                        <li><a href="#">Consoles</a>
+                        <li><a href="#">PC components</a>
+                        <li><a href="#">Build your PC</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="dropmenu">
+
+                    <li><label for="gg">
+                        <input id="gg" class="dropmenu-btn" type="checkbox">
+                        <a class="drop-btn">Games guider<i class='bx bx-chevron-down'></i></a>
+                    </label>
+                    </li>
+                    <div class="dropmenu-content gg">
+                        <li><a href="#">Devices</a>
+                        <li><a href="#">hardware enhancments</a>
+                    </div>
+                </div><hr>
+            </ul>
+            <div class="hamburger-extra">
+                <a href="#"><img src="shopping-cart.png" alt="cart"></a>
+                <a><button id="dark2"><img src="dark-mode.png" alt="darkmode"></button></a>
+            </div>
+        </div>
         <nav>
-            <a class ="logo" href="https://www.youtube.com/watch?v=d-9ZLf0k7b4">night owls</a>
+            <div class="ham">
+                <label for="menu-icon" class="menu-icon">
+                    <input id="menu-icon" class="burger-btn" type="checkbox">
+                    <i class='bx bx-menu' ></i>
+                </label>
+            </div>
+            <a class ="logo" href="index.html">night owls</a>
+            <a class="ham" href="#"><img src="user.png" alt="user"></a>
             <ul class="navmenu">
                 <li><a class="active" href="index.html">HOME</a></li>
-                <li><div class="dropdown"><a href="">Accessories</a>
+                <li><div class="dropdown"><a>Accessories</a>
                     <div class="dropdown-content">
                         <a href="#">Gaming</a>
                         <a href="#">Setup</a>
                         <a href="#">Collections</a>
                     </div>
                 </div></li>
-                <li><div class="dropdown"><a href="">Devices and hardware</a>
+                <li><div class="dropdown"><a>Devices and hardware</a>
                     <div class="dropdown-content">
                         <a href="prebuilt.html">Pre built PC</a>
                         <a href="#">Laptops and tablets</a>
@@ -28,7 +88,7 @@
                         <a href="#">Build your PC</a>
                     </div>
                 </div></li>
-                <li><div class="dropdown"><a href="">Games guider</a>
+                <li><div class="dropdown"><a>Games guider</a>
                     <div class="dropdown-content">
                         <a href="#">Devices</a>
                         <a href="#">hardware enhancments</a>
@@ -36,9 +96,9 @@
                 </div></li>
             </ul>
             <ul class="acc">
-                <li><a href="#"><button id="dark"><img class="cart_image" src="dark-mode.png" alt="logo"></button></a></li>
-                <li><a href="#"><img class="cart_image" src="shopping-cart.png" alt="logo"></a></li>
-                <li><a href="#"><img src="user.png" alt="logo"></a></li>
+                <li><a href="#"><button id="dark1"><img class="cart_image" src="dark-mode.png" alt="darkmode"></button></a></li>
+                <li><a href="#"><img class="cart_image" src="shopping-cart.png" alt="cart"></a></li>
+                <li><a href="#"><img src="user.png" alt="user"></a></li>
             </ul>
         </nav>
     </header>
@@ -136,10 +196,12 @@
 
     </footer>
     <script>
-
-        var icon = document.getElementById("dark");
-
-        icon.onclick = function () {
+        var dark1 = document.getElementById("dark1");
+        dark1.onclick = function () {
+            document.body.classList.toggle("dark")
+        }
+        var dark2 = document.getElementById("dark2");
+        dark2.onclick = function () {
             document.body.classList.toggle("dark")
         }
     </script>
