@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width-device-width, initial-scale-1.0">
+  <title>
+    Checkout
+  </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="checkout">
+  <!--Billing Address-->
+  <div class="bucket">
+    <form id="paymentForm">
+      <div class="row">
+        <div class="column">
+          <h3 class="title">Billing Address</h3>
+          <div class="input-box">
+            <span>Full Name:</span>
+            <input type="text" placeholder="Jacob Aiden">
+          </div>
+          <div class="input-box">
+            <span>Email:</span>
+            <input type="email" placeholder="example@example.com">
+          </div>
+          <div class="input-box">
+            <span>Address:</span>
+            <input type="text" placeholder="Room - Street - Locality">
+          </div>
+          <div class="input-box">
+            <span>City:</span>
+            <input type="text" placeholder="Berlin">
+          </div>
+          <div class="flex">
+            <div class="input-box">
+              <span>State:</span>
+              <input type="text" placeholder="Germany">
+            </div>
+            <div class="input-box">
+              <span>Zip Code:</span>
+              <input type="number" placeholder="123 456">
+            </div>
+          </div>
+        </div>
+        <div class="column">
+
+          <!--Paying Methods-->
+
+          <h3 class="title">Payment Methods</h3>
+          <div class="input-box">
+
+            <div class="container">
+              <form>
+                <label>
+                  <input type="radio" name="radio" id="payment_cash" checked="">
+                  <span>Cash</span>
+                </label>
+                <label>
+                  <input type="radio" id="payment_card" name="radio">
+                  <span>Card</span>
+                </label>
+                <label>
+                  <input type="radio" id="payment_instapay" name="radio">
+                  <span>InstaPay</span>
+                </label>
+                <label class="submit_buttons">
+                  <button class="payment_card_submit"><a href="card.html">card</a></button>
+                  <a href="cash.html"><button class="payment_cash_submit">cash</button></a>
+                  <a href="instapay.html"><button class="payment_instapay_submit">instapay</button></a>
+                </label>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+
+</html>
