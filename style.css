@@ -211,6 +211,17 @@ body{
         gap: 20px;
     }
 }
+#laptops{
+    margin: 7.5px;
+    .grid-tags{
+        margin-top: 20px;
+    }
+    .cg{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
 #about-us{
     margin: 7.5px;
     main{
