@@ -1,84 +1,73 @@
 <!DOCTYPE html>
+<!--suppress ALL -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE-edge">
-  <meta name="viewport" content="width-device-width, initial-scale-1.0">
-  <title>
-    Checkout
-  </title>
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <title>Checkout</title>
   <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script src="script.js"></script>
 </head>
-
 <body>
 <div id="checkout">
-  <!--Billing Address-->
-  <div class="bucket">
-    <form id="paymentForm">
-      <div class="row">
-        <div class="column">
-          <h3 class="title">Billing Address</h3>
-          <div class="input-box">
-            <span>Full Name:</span>
-            <input type="text" placeholder="Jacob Aiden">
-          </div>
-          <div class="input-box">
-            <span>Email:</span>
-            <input type="email" placeholder="example@example.com">
-          </div>
-          <div class="input-box">
-            <span>Address:</span>
-            <input type="text" placeholder="Room - Street - Locality">
-          </div>
-          <div class="input-box">
-            <span>City:</span>
-            <input type="text" placeholder="Berlin">
-          </div>
-          <div class="flex">
-            <div class="input-box">
-              <span>State:</span>
-              <input type="text" placeholder="Germany">
-            </div>
-            <div class="input-box">
-              <span>Zip Code:</span>
-              <input type="number" placeholder="123 456">
-            </div>
-          </div>
+  <div class="backbutt">
+    <button onclick="history.back()" role="button" class="home-btn"><i class="bx bxs-home"></i>BACK</button>
+  </div>
+  <main>
+  <div class="checkout">
+    <div class="billing co">
+        <h1>BILLING ADDRESS</h1>
+      <form>
+      <div class="input-box">
+        <span>Full Name:</span>
+        <input type="text" placeholder="Jacob Aiden">
+      </div>
+      <div class="input-box">
+        <span>Email:</span>
+        <input type="email" placeholder="example@example.com">
+      </div>
+      <div class="input-box">
+        <span>Address:</span>
+        <input type="text" placeholder="Room - Street - Locality">
+      </div>
+      <div class="input-box">
+        <span>City:</span>
+        <input type="text" placeholder="Berlin">
+      </div>
+      <div class="input-box hori">
+        <div class="input-box">
+          <span>State:</span>
+          <input type="text" placeholder="Germany">
         </div>
-        <div class="column">
-
-          <!--Paying Methods-->
-
-          <h3 class="title">Payment Methods</h3>
-          <div class="input-box">
-
-            <div class="container">
-              <form>
-                <label>
-                  <input type="radio" name="radio" id="payment_cash" checked="">
-                  <span>Cash</span>
-                </label>
-                <label>
-                  <input type="radio" id="payment_card" name="radio">
-                  <span>Card</span>
-                </label>
-                <label>
-                  <input type="radio" id="payment_instapay" name="radio">
-                  <span>InstaPay</span>
-                </label>
-                <label class="submit_buttons">
-                  <button class="payment_card_submit"><a href="card.html">card</a></button>
-                  <a href="cash.html"><button class="payment_cash_submit">cash</button></a>
-                  <a href="instapay.html"><button class="payment_instapay_submit">instapay</button></a>
-                </label>
-              </form>
-            </div>
-          </div>
+        <div class="input-box">
+          <span>Zip Code:</span>
+          <input type="text" placeholder="123 456">
         </div>
       </div>
-    </form>
+      </form>
+    </div>
+    <div class="payment_method co">
+        <h1>PAYMENT METHODS</h1>
+      <form>
+        <div class="radio-input">
+          <input type="radio" id="payment_cash" name="pay_type" checked = "">
+          <label for="payment_cash">CASH<i class='bx bx-money'></i></label>
+          <input type="radio" id="payment_card" name="pay_type">
+          <label for="payment_card">CARD<i class='bx bxs-credit-card'></i></label>
+          <input type="radio" id="payment_instapay" name="pay_type">
+          <label for="payment_instapay">INSTA PAY<i class='bx bxs-wallet'></i></label>
+        </div>
+      </form>
+      <div class="pay_btn">
+        <a href="cash.html"><button class="btn csh">pay</button></a>
+        <a href="card.html"><button class="btn crd">pay</button></a>
+        <a href="instapay.html"><button class="btn inspay">pay</button></a>
+      </div>
+    </div>
   </div>
+  </main>
 </div>
 </body>
-
 </html>
