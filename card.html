@@ -20,7 +20,7 @@
         <div class="card">
             <h3>CARD INFORMATION</h3>
             <div class="credit-nu">
-                <input id="credit-card-input" type="text" maxlength="19" size="19" autofocus placeholder="XXXX XXXX XXXX XXXX" onkeypress="num()">
+                <input id="credit-card-input" name="cardno" type="text" maxlength="19" size="19" autofocus placeholder="XXXX XXXX XXXX XXXX" onkeypress="num()">
             </div>
             <div class="credit-rest">
                 <input id="CVC" name="CVC" type="text" maxlength="3" size="3" placeholder="CVC">
@@ -32,7 +32,7 @@
         </div>
             </form>
         <div class="proceed-card">
-            <button onclick="allnumeric(document.buycardform.CVC)+expire(document.buycardform.expire)"  type="submit" class="proceed-card-btn">Total: 3500 EGP<p>PAY NOW</p></button>
+            <button onclick="submitcard(document.buycardform.CVC,document.buycardform.expire,document.buycardform.cardno)"  type="submit" class="proceed-card-btn">Total: 3500 EGP<p>PAY NOW</p></button>
         </div>
             </main>
     </div>

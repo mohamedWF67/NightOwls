@@ -924,6 +924,9 @@ main{
         transform: scale(0.80);
     }
 }
+@media (max-width: 425px) {
+    .backbutt{display: none}
+}
 @media (max-width: 1090px){
     #about-us{
         .us{
