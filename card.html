@@ -16,23 +16,41 @@
             <button onclick="history.back()" role="button" class="home-btn"><i class="bx bxs-home"></i>BACK</button>
         </div>
         <main>
+            <form name="buycardform">
         <div class="card">
             <h3>CARD INFORMATION</h3>
             <div class="credit-nu">
-                <input type="text" maxlength="4" size="4" autofocus placeholder="XXXX"><input type="text" maxlength="4" size="4" placeholder="XXXX"><input type="text" maxlength="4" size="4" placeholder="XXXX"><input type="text" maxlength="4" size="4" placeholder="XXXX">
+                <input id="credit-card-input" type="text" maxlength="19" size="19" autofocus placeholder="XXXX XXXX XXXX XXXX" onkeypress="num()">
             </div>
             <div class="credit-rest">
-                <input type="text" maxlength="3" size="3" placeholder="CVC">
-                <input type="text" maxlength="5" size="5" placeholder="MM/YY">
+                <input id="CVC" name="CVC" type="text" maxlength="3" size="3" placeholder="CVC">
+                <input id="EXPIRE" name="expire" type="text" maxlength="5" size="5" placeholder="MM/YY">
             </div>
             <div class="nameholder">
                 <input id="nameholder" type="text" placeholder="CARD HOLDER"><i class='bx bxl-mastercard'></i>
             </div>
         </div>
+            </form>
         <div class="proceed-card">
-            <button type="submit" class="proceed-card-btn">Total: 3500 EGP<p>PAY NOW</p></button>
+            <button onclick="allnumeric(document.buycardform.CVC)+expire(document.buycardform.expire)"  type="submit" class="proceed-card-btn">Total: 3500 EGP<p>PAY NOW</p></button>
         </div>
             </main>
     </div>
+<script>
+    //expire dash
+    const input = document.getElementById("EXPIRE");
+    input.addEventListener("input", () => input.value = formatNumber(input.value.replaceAll("/", "")));
+    const formatNumber = (number) => number.split("").reduce((seed, next, index) => {
+        if (index !== 0 && !(index % 2)) seed += "/";
+        return seed + next;
+    }, "");
+    // card number spaceing
+    const cred = document.getElementById("credit-card-input");
+    cred.addEventListener("input", () => cred.value = crednumber(cred.value.replaceAll(" ", "")));
+    const crednumber = (number) => number.split("").reduce((seed, next, index) => {
+        if (index !== 0 && !(index % 4)) seed += " ";
+        return seed + next;
+    }, "");
+</script>
 </body>
 </html>
