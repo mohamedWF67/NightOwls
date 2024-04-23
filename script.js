@@ -1,4 +1,5 @@
 //buycard
+document.getElementById("slider").style.scrollBehavior = "smooth";
 function submitcard(x,y,z){
     allnumeric(x);
     expire(y);
@@ -46,4 +47,13 @@ function cardno(inputtxt)
         return false;
     }
 }
-//
+//dark mode
+function darkmode(){
+    document.body.classList.toggle("dark");
+}
+function scrollr(scroll_element) {
+    scroll_element.scrollBy(300,0);
+}
+function scrolll(scroll_element) {
+    scroll_element.scrollBy(-300,0);
+}

@@ -910,7 +910,9 @@ main{
         }
     }
     #inspire{
+        scroll-behavior: smooth;
         .slider{
+            scroll-behavior: smooth;
             height: 60vw;
             .slide{
                 height: 55vw;

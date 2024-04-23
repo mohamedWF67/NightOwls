@@ -104,7 +104,7 @@
         </nav>
     </header>
     <main>
-    <div class="slider">
+    <div id="slider" class="slider">
         <div class="slider_track">
             <div class="slide">
                 <img src="https://images.ctfassets.net/h50kqpe25yx1/2YyN3UuhRqJ59aBodTwCDy/a0828aef7c88fd2ba551e98b13da6134/Setups_Landing_Page_Lifestyle_Shot_10.jpg">
@@ -127,8 +127,8 @@
         </div>
     </div>
         <div class="slider_nav">
-            <button class="btn" onclick="scrolll()">back</button>
-            <button role="button" class="btn" onclick="scrollr()">forward</button>
+            <button class="btn" onclick="scrolll(document.querySelector('.slider'))">back</button>
+            <button role="button" class="btn" onclick="scrollr(document.querySelector('.slider'))">forward</button>
         </div>
     </main>
     <footer>
@@ -185,18 +185,6 @@
     </footer>
 </div>
 <script>
-    let slide = document.querySelector(".slider");
-    function scrollr(){slide.scrollBy(900,0)}
-    function scrolll(){slide.scrollBy(-900,0)}
-    slide.style.scrollBehavior = "smooth";
-    var dark1 = document.getElementById("dark1");
-    dark1.onclick = function () {
-        document.body.classList.toggle("dark")
-    }
-    var dark2 = document.getElementById("dark2");
-    dark2.onclick = function () {
-        document.body.classList.toggle("dark")
-    }
-</script>
+    </script>
 </body>
 </html>
