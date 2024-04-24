@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body{
     margin: 0;
     padding: 0;
     background: var(--background);
-    font-family: "Barlow Condensed",sans-serif;
+    font-family: "Barlow Semi Condensed",sans-serif;
     font-weight: bold ;
     display: flex;
     flex-direction: column;
@@ -501,6 +505,37 @@ body{
         box-shadow: var(--accent) 0 0 8px 2px;
     }
 }
+#req{
+    margin: 7.5px;
+    text-align: center;
+    .req_table_box{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .req_table{
+            color: var(--text);
+            box-shadow: rgba(9, 30, 66, 0.25) 0 4px 8px -2px, rgba(9, 30, 66, 0.08) 0 0 0 1px;
+            background-color: rgba(255, 255, 255, 0.074);
+            backdrop-filter: blur(10px);
+            text-align: center;
+            border-radius: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.074);
+            overflow: hidden;
+        table,th,td{
+            color: var(--text);
+            border-radius:20px;
+            border: 2px solid rgba(255, 255, 255, 0.074);
+            border-collapse: collapse;
+            padding: 8px;
+            caption{
+                padding: inherit;
+            }
+        }
+        }
+    }
+}
 button{
     cursor: pointer;
     border: none;
@@ -854,14 +889,14 @@ main{
     --grid: #171717;
     --shadow: rgba(0,0,0,0.6);
 }
-@media (min-width: 751px) {
+@media (min-width: 806px) {
     nav{
         justify-content: space-between;
     }
     .ham{display: none;}
     .hamburger{display: none;}
 }
-@media (max-width: 750px) {
+@media (max-width: 805px) {
     .navmenu{
         display: none;
     }
@@ -874,6 +909,9 @@ main{
         .logo{
             margin:0;
         }
+    }
+    .grid-mover{
+        display: none;
     }
     .new-arrival-grid{
         padding: 10px 5px;
