@@ -506,8 +506,16 @@ body{
     }
 }
 #req{
+    height: 100vh;
     margin: 7.5px;
-    text-align: center;
+    main{
+        height: 75%;
+        color: var(--text);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .req_table_box{
         min-height: 100vh;
         display: flex;
