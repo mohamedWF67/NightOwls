@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 body{
     margin: 0;
     padding: 0;
@@ -28,6 +26,10 @@ body{
     :has(#gg:checked) .gg {display: block;}
     :has(#dh:checked) .dh {display: block;}
     :has(#ass:checked) .ass {display: block;}
+    /* setup page */
+    :has(#desk:checked) .desk {display: flex;}
+    :has(#chair:checked) .chair {display: flex;}
+    :has(#light:checked) .light {display: flex;}
 }
 *{
     transition: all 0.3s;
@@ -181,6 +183,10 @@ body{
     }
 }
 #Prebuilt{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 7.5px;
     .grid-tags{
         margin-top: 20px;
@@ -192,6 +198,10 @@ body{
     }
 }
 #laptops{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 7.5px;
     .grid-tags{
         margin-top: 20px;
@@ -213,7 +223,87 @@ body{
         gap: 20px;
     }
 }
+#pc_comp{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 7.5px;
+    .grid-tags{
+        margin-top: 20px;
+    }
+    .cg{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+#setup{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 7.5px;
+    main{
+        .radio-input{
+            margin: 15px 0;
+            display: flex;
+            flex-direction: row;
+            input{display: none;}
+            label{
+                margin: 10px;
+                border: 2px solid var(--border);
+                height: 40px;
+                display: flex;
+                align-items: center;
+                padding: 0 20px;
+                border-radius: 20px;
+                justify-content: space-between;
+                color: var(--text);
+            }
+        }
+        .radio-input label:hover{
+            border: 2px solid rgba(95, 82, 211, 0.50);
+            transform: scale(1.15);
+        }
+        .radio-input label:active{
+            border: 2px solid rgba(95, 82, 211, 0.50);
+            transform: scale(0.95);
+        }
+        .radio-input input:checked + label{
+            border: 2px solid rgba(95, 82, 211, 1);
+        }
+        .cg,.grid-tags{display: none;}
+    }
+    .grid-tags{
+        margin-top: 20px;
+    }
+    .cg{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+#collecs{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 7.5px;
+    .grid-tags{
+        margin-top: 20px;
+    }
+    .cg{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
 #about-us{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 7.5px;
     main{
         color: var(--text);
@@ -241,6 +331,73 @@ body{
     .us:hover{
         transform: scale(1.01);
         box-shadow: var(--accent) 0 1px 8px;
+    }
+}
+#contact_us{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 7.5px;
+    main{
+        *{box-sizing: border-box;}
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact_us{
+        box-shadow: rgba(9, 30, 66, 0.25) 0 4px 8px -2px, rgba(9, 30, 66, 0.08) 0 0 0 1px;
+        background-color: rgba(255, 255, 255, 0.074);
+        text-align: center;
+        border-radius: 20px;
+        border: 2px solid rgba(255, 255, 255, 0.074);
+        form{
+            h1{color: var(--text);}
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            height: 100%;
+            .co{
+                min-width: 500px;
+                padding: 10px;
+                textarea{
+                    padding: 20px;
+                    background: none;
+                    border-radius: 20px;
+                    outline: 0;
+                    border: 2px solid rgba(255, 255, 255, 0.25);
+                    height: 350px;
+                    color: var(--text);
+                    resize: none;
+                }
+                .input-box{
+                    width: 100%;
+                    text-align: left;
+                    display: flex;
+                    flex-direction: column;
+                    span{
+                        margin: 10px 0 10px 5px;
+                        color: var(--text);
+                    }
+                    input{
+                        background: none;
+                        height: 30px;
+                        border-radius: 20px;
+                        outline: 0;
+                        border: 2px solid rgba(255, 255, 255, 0.25);
+                        padding: 0 10px;
+                        color: var(--text);
+                    }
+                    input:hover{
+                        border: 2px solid rgba(95, 82, 211, 0.50);
+                    }
+                    input:focus{
+                        border: 2px solid rgba(95, 82, 211, 1);
+                    }
+                }
+            }
+        }
     }
 }
 #checkout{
@@ -458,9 +615,12 @@ body{
     .slider::-webkit-scrollbar{
         display: none;
     }
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 7.5px;
     main{
-        min-height: 90vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -507,9 +667,14 @@ body{
 }
 #req{
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 7.5px;
+    .btn{
+        margin-top: 0;
+    }
     main{
-        height: 100%;
         color: var(--text);
         display: flex;
         flex-direction: column;
@@ -517,7 +682,7 @@ body{
         align-items: center;
     }
     .req_table_box{
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -544,6 +709,10 @@ body{
     }
 }
 #hardware{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 7.5px;
     .grid-tags{
         margin-top: 20px;
@@ -552,11 +721,8 @@ body{
         justify-content: center;
         flex-wrap: wrap;
         gap: 20px;
-
         }
     }
-
-
 button{
     cursor: pointer;
     border: none;
@@ -596,7 +762,7 @@ header{
             }
             margin: 10px;
             text-decoration: none;
-            font-size: 30px;
+            font-size: 26px;
             hr{
                 color: black;
             }
@@ -632,6 +798,7 @@ header{
         position: relative;
         display: inline-block;
         .dropdown-content {
+            border-radius: 0 0 20px 20px;
             display: none;
             position: absolute;
             background-color: var(--background);
@@ -674,6 +841,9 @@ header{
         .acc {
             margin: 0 20px 0 0;
             padding: 0;
+            .dropdown-content{
+                transform: translate(-100px);
+            }
             a:hover{
                 filter: drop-shadow(0px 0px 2px var(--glow));
             }
@@ -899,6 +1069,7 @@ main{
     --glow: #c2affa;
     --grid: #171717;
     --shadow: rgba(255,255,255,0.2);
+    --border: rgba(255, 255, 255, 0.25);
 }
 .dark{
     --text: #000000;
@@ -909,6 +1080,7 @@ main{
     --glow: #c2affa;
     --grid: #171717;
     --shadow: rgba(0,0,0,0.6);
+    --border: rgba(0,0,0,0.25);
 }
 @media (min-width: 806px) {
     nav{
@@ -979,10 +1151,21 @@ main{
         }
         .slider_nav{display: none}
     }
+    #contact_us{
+        .contact_us{
+            width: 90vw;
+            form .co{
+                min-width: 20px;
+            }
+        }
+    }
 }
 @media (max-width: 375px) {
     #buycard main{
         transform: scale(0.80);
+    }
+    header{
+        .hamburger{}
     }
 }
 @media (max-width: 425px) {

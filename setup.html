@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Setup</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+<div id="setup">
+    <header>
+        <div class="hamburger">
+            <ul>
+                <li><a class="active" href="index.html">HOME</a></li>
+                <hr>
+                <div class="dropmenu">
+                    <li><label for="ass">
+                        <input id="ass" class="dropmenu-btn" type="checkbox">
+                        <a>Accessories<i class='bx bx-chevron-down'></i></a>
+                    </label>
+                    </li>
+                    <div class="dropmenu-content ass">
+                        <li><a href="gaming.html">Gaming</a>
+                        <li><a href="setup.html">Setup</a>
+                        <li><a href="collections.html">Collections</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="dropmenu">
+                    <li><label for="dh">
+                        <input id="dh" class="dropmenu-btn" type="checkbox">
+                        <a>Devices and hardware<i class='bx bx-chevron-down'></i></a>
+                    </label>
+                    </li>
+                    <div class="dropmenu-content  dh">
+                        <li><a href="prebuilt.html">Pre built PC</a>
+                        <li><a href="laptops.html">Laptops</a>
+                        <li><a href="consoles.html">Consoles</a>
+                        <li><a href="pc_components.html">PC components</a>
+                        <li><a href="build_your_pc.html">Build your PC</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="dropmenu">
+                    <li><label for="gg">
+                        <input id="gg" class="dropmenu-btn" type="checkbox">
+                        <a class="drop-btn">Games guider<i class='bx bx-chevron-down'></i></a>
+                    </label>
+                    </li>
+                    <div class="dropmenu-content gg">
+                        <li><a href="requirements.html">Requirements</a>
+                        <li><a href="hardware.html">Hardware enhancements</a>
+                    </div>
+                </div><hr>
+            </ul>
+            <div class="hamburger-extra">
+                <a href="cart.html"><img src="shopping-cart.png" alt="cart"></a>
+                <a><button onclick="darkmode()"><img src="dark-mode.png" alt="darkmode"></button></a>
+            </div>
+        </div>
+        <nav>
+            <div class="ham">
+                <label for="menu-icon" class="menu-icon">
+                    <input id="menu-icon" class="burger-btn" type="checkbox">
+                    <i class='bx bx-menu' ></i>
+                </label>
+            </div>
+            <a class ="logo" href="index.html">night owls</a>
+            <a class="ham" href="profile.html"><img src="user.png" alt="user"></a>
+            <ul class="navmenu">
+                <li><a class="active" href="index.html">HOME</a></li>
+                <li><div class="dropdown"><a>Accessories</a>
+                    <div class="dropdown-content">
+                        <a href="gaming.html">Gaming</a>
+                        <a href="setup.html">Setup</a>
+                        <a href="collections.html">Collections</a>
+                    </div>
+                </div></li>
+                <li><div class="dropdown"><a>Devices and hardware</a>
+                    <div class="dropdown-content">
+                        <a href="prebuilt.html">Pre built PC</a>
+                        <a href="laptops.html">Laptops</a>
+                        <a href="consoles.html">Consoles</a>
+                        <a href="pc_components.html">PC components</a>
+                        <a href="build_your_pc.html">Build your PC</a>
+                    </div>
+                </div></li>
+                <li><div class="dropdown"><a>Games guider</a>
+                    <div class="dropdown-content">
+                        <a href="requirements.html">Requirements</a>
+                        <a href="hardware.html">Hardware enhancments</a>
+                    </div>
+                </div></li>
+            </ul>
+            <ul class="acc">
+                <li><a ><button onclick="darkmode()"><img class="cart_image" src="dark-mode.png" alt="darkmode"></button></a></li>
+                <li><a href="cart.html"><img class="cart_image" src="shopping-cart.png" alt="cart"></a></li>
+                <li><a href="profile.html"><img src="user.png" alt="user"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <div class="radio-input">
+                <input type="radio" value="1" id="desk" name="setup" checked = "">
+                <label for="desk">Desk</label>
+                <input type="radio" value="2" id="chair" name="setup">
+                <label for="chair">Chair</label>
+                <input type="radio" value="3" id="light" name="setup">
+                <label for="light">light</label>
+            </div>
+        </form>
+        <div class="grid-tags desk"><p>Desk</p></div>
+        <div class="new-arrival-grid cg desk">
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://m.media-amazon.com/images/I/51bfphEIWlL._AC_SL1500_.jpg"></div>
+                <p>Cooler Master GD160 PC Gamimg Desk, Gaming Table, Black, Purple</p>
+                <button role="button" class="btn">17,600 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://m.media-amazon.com/images/I/51SKlRGV4vL._AC_SL1500_.jpg"></div>
+                <p>Arozzi Arena Gaming Desk 63" Wide, Ultrawide Curved Gaming and Office Desk, Large Gaming Desk with Custom Monitor Mount & Cable Management Under Desk (Black)</p>
+                <button role="button" class="btn">14,500 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://m.media-amazon.com/images/I/71ExckqCniL._AC_SL1500_.jpg"></div>
+                <p>ODK 47 Inch Small L Shaped Computer Desk with Reversible Storage Shelves, L-Shaped Corner Desk with Monitor Stand for Small Space, Modern Simple Writing Study Table for Home Office Workstation, Black</p>
+                <button role="button" class="btn">20,330 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://cougargaming.com/global/img/products/desk/e-mars-list-pro.png"></div>
+                <p>COUGAR E-mars</p>
+                <button role="button" class="btn">21,847 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://image.springbeetle.com/cdn-cgi/image/dpr=1,format=webp,fit=pad/https://staticprod.site.flexispot.com/dev/trantor/attachments/223Q-4.jpg"></div>
+                <p> FlexiSpot E7 Plus
+                    4-leg Standing Desk (E7 Plus)</p>
+                <button role="button" class="btn">16,650 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://image.springbeetle.com/cdn-cgi/image/dpr=1,format=webp,fit=pad/https://s3.springbeetle.com/prod-us2-bucket/trantor/attachments/US/E7L-main%20picture-24.2.29.jpg"></div>
+                <p> FlexiSpot E7L
+                    Pro L-Shaped Standing Desk (E7L)</p>
+                <button role="button" class="btn">18,460 EGP</button>
+            </div>
+        </div>
+        <div class="grid-tags chair"><p>Chair</p></div>
+        <div class="new-arrival-grid cg chair">
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://img.overclockers.co.uk/images/GC-000-AS/08d36c2f14e6f16e56178422d7fb4ae7.jpg?auto=compress%2Cformat&fit=fill&fill-color=fff&q=70&fill=solid&w=442&h=442"></div>
+                <p>Asus SL300 ROG Chariot Core Gaming Chair</p>
+                <button role="button" class="btn">20,250 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://img.overclockers.co.uk/images/GC-00Z-AE/b3ca6fd30f78047bf7de48ec2dc938cc.jpg?auto=compress%2Cformat&fit=fill&fill-color=fff&q=70&fill=solid&w=442&h=442"></div>
+                <p>Aerocool Crown Nobility Series Gaming Chair - Moonstone White</p>
+                <button role="button" class="btn">8,512 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://img.overclockers.co.uk/images/GC-008-AS/17fb342e2e98afc90c51e13aa7e95122.jpg?auto=compress%2Cformat&fit=fill&fill-color=fff&q=70&fill=solid&w=442&h=442"></div>
+                <p>Asus ROG Destrier Ergo Gaming Chair</p>
+                <button role="button" class="btn">26,330 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://img.overclockers.co.uk/images/GC-06D-NR/91e85b0d0262739c3fd7282fa827e069.jpg?auto=compress%2Cformat&fit=fill&fill-color=fff&q=70&fill=solid&w=442&h=442"></div>
+                <p>Nitro Concepts X1000 Gaming Chair - Transformers Decepticons Edition</p>
+                <button role="button" class="btn">13,856 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://img.overclockers.co.uk/images/GC-003-NC/bf43ef1278cfea87a50ccf0ec97528d9.jpg?auto=compress%2Cformat&fit=fill&fill-color=fff&q=70&fill=solid&w=442&h=442"></div>
+                <p>noblechairs EPIC Gaming Chair - Black/Red</p>
+                <button role="button" class="btn">16,730 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://img.overclockers.co.uk/images/GC-00X-NC/59325cc781abb4d7fa8fb4a2af90e84e.jpg?auto=compress%2Cformat&fit=fill&fill-color=fff&q=70&fill=solid&w=442&h=442"></div>
+                <p>noblechairs HERO Gaming Chair - Black/White</p>
+                <button role="button" class="btn">17,730 EGP</button>
+            </div>
+        </div>
+        <div class="grid-tags light"><p>light</p></div>
+        <div class="new-arrival-grid cg light">
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://us.govee.com/cdn/shop/products/H6065-1_540x.jpg?v=1681728169"></div>
+                <p>Govee Glide RGBIC Y Lights</p>
+                <button role="button" class="btn">7,800 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://us.govee.com/cdn/shop/files/ID_1_9bcf850f-4373-4199-aed8-a91d9f662ae9_540x.jpg?v=1713773849"></div>
+                <p>Govee Glide Hexagon Light Panels Ultra</p>
+                <button role="button" class="btn">20,350 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://us.govee.com/cdn/shop/products/B6062101-1_540x.jpg?v=1698975273"></div>
+                <p>Govee Glide Wall Light</p>
+                <button role="button" class="btn">3,650 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://us.govee.com/cdn/shop/files/lQDPJxvwHUasGrLNA-jNA-iwJPAs-oNNEwMEOQehsUA0AA_1000_1000.jpg_720x720q90g_540x.jpg?v=1713770731"></div>
+                <p>Govee RGBIC LED Neon Rope Lights for Desks</p>
+                <button role="button" class="btn">8,950 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://us.govee.com/cdn/shop/products/H6061-10-1_540x.jpg?v=1703209441"></div>
+                <p>Govee Glide Hexa Light Panels</p>
+                <button role="button" class="btn">6,260 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://int-cdn.nanoleaf.me/assets/img/products/shapes/owl/black-triangles/smk/9pk/1-nanoleaf-shapes-ultra-black-triangles-light-panels-smarter-kit-9-cool@1x.webp"></div>
+                <p>Limited Edition Ultra Black Triangles Starter Kit (9 Panels)</p>
+                <button role="button" class="btn">11,150 EGP</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-content">
+                <h4><a href="#">Welcome to our website</a></h4>
+                <ul>
+                    <li><a href="about-us.html">About us</a></li>
+                    <li><a href="contact_us.html">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h4>Accessories</h4>
+                <ul>
+                    <li><a href="gaming.html">Gaming</a></li>
+                    <li><a href="setup.html">Setup</a></li>
+                    <li><a href="collections">Collections</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h4>Devices and hardware</h4>
+                <ul>
+                    <li><a href="prebuilt.html">Pre built PC</a></li>
+                    <li><a href="laptops.html">Laptops</a></li>
+                    <li><a href="consoles.html">Consoles</a></li>
+                    <li><a href="pc_components.html">PC components</a></li>
+                    <li><a href="build_your_pc.html">Build your PC</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h4>Games guider</h4>
+                <ul>
+                    <li><a href="requirements.html">Requirements</a></li>
+                    <li><a href="hardware.html">Hardware enhancements</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h4>Cart</h4>
+                <ul>
+                    <li><a href="card.html">View cart</a></li>
+                    <li><a href="#">Clear cart</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h4>Account</h4>
+                <ul>
+                    <li><a href="log%20in.html">Login</a></li>
+                    <li><a href="registration.html">Sign-up</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
