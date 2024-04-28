@@ -36,6 +36,14 @@ body{
     /* hardware */
     :has(#pc:checked) .pc {display: block;}
     :has(#laptop:checked) .laptop {display: block;}
+    /* comp */
+    :has(#cpu:checked) .cpu {display: flex;}
+    :has(#mobo:checked) .mobo {display: flex;}
+    :has(#GPU:checked) .GPU {display: flex;}
+    :has(#RAM:checked) .RAM {display: flex;}
+    :has(#SSD:checked) .SSD {display: flex;}
+    :has(#case:checked) .case {display: flex;}
+    :has(#PSU:checked) .PSU {display: flex;}
 }
 *{
     transition: all 0.3s;
@@ -239,6 +247,37 @@ body{
     flex-direction: column;
     justify-content: space-between;
     margin: 7.5px;
+    main{
+        .radio-input{
+            margin: 15px 0;
+            display: flex;
+            flex-direction: row;
+            input{display: none;}
+            label{
+                color: var(--text);
+                margin: 10px;
+                border: 2px solid var(--border);
+                height: 40px;
+                display: flex;
+                align-items: center;
+                padding: 0 20px;
+                border-radius: 20px;
+                justify-content: space-between;
+            }
+        }
+        .radio-input label:hover{
+            border: 2px solid rgba(95, 82, 211, 0.50);
+            transform: scale(1.15);
+        }
+        .radio-input label:active{
+            border: 2px solid rgba(95, 82, 211, 0.50);
+            transform: scale(0.95);
+        }
+        .radio-input input:checked + label{
+            border: 2px solid rgba(95, 82, 211, 1);
+        }
+        .cg,.grid-tags{display: none;}
+    }
     .grid-tags{
         margin-top: 20px;
     }
@@ -1074,8 +1113,12 @@ header{
         .logo{
             margin: 0 0 0 20px;
             img{
+                filter: brightness(0%);
                 width: 80px;
                 height: 80px;
+            }
+            img:hover{
+                    filter: drop-shadow(0px 0px 2px var(--glow)),brightness(0%);
             }
         }
         .navmenu{
