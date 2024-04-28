@@ -1,10 +1,307 @@
 <!DOCTYPE html>
+<!--suppress ALL -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Gaming</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
+<div id="gaming">
+    <header>
+        <div class="hamburger">
+            <ul>
+                <li><a class="active" href="index.html">HOME</a></li>
+                <hr>
+                <div class="dropmenu">
+                    <li><label for="ass">
+                        <input id="ass" class="dropmenu-btn" type="checkbox">
+                        <a>Accessories<i class='bx bx-chevron-down'></i></a>
+                    </label>
+                    </li>
+                    <div class="dropmenu-content ass">
+                        <li><a href="gaming.html">Gaming</a>
+                        <li><a href="setup.html">Setup</a>
+                        <li><a href="collections.html">Collections</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="dropmenu">
+                    <li><label for="dh">
+                        <input id="dh" class="dropmenu-btn" type="checkbox">
+                        <a>Devices and hardware<i class='bx bx-chevron-down'></i></a>
+                    </label>
+                    </li>
+                    <div class="dropmenu-content  dh">
+                        <li><a href="prebuilt.html">Pre built PC</a>
+                        <li><a href="laptops.html">Laptops</a>
+                        <li><a href="consoles.html">Consoles</a>
+                        <li><a href="pc_components.html">PC components</a>
+                        <li><a href="build_your_pc.html">Build your PC</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="dropmenu">
+                    <li><label for="gg">
+                        <input id="gg" class="dropmenu-btn" type="checkbox">
+                        <a class="drop-btn">Games guider<i class='bx bx-chevron-down'></i></a>
+                    </label>
+                    </li>
+                    <div class="dropmenu-content gg">
+                        <li><a href="requirements.html">Requirements</a>
+                        <li><a href="hardware.html">Hardware enhancements</a>
+                    </div>
+                </div><hr>
+            </ul>
+            <div class="hamburger-extra">
+                <a href="cart.html"><img src="shopping-cart.png" alt="cart"></a>
+                <a><button onclick="darkmode()"><img src="dark-mode.png" alt="darkmode"></button></a>
+            </div>
+        </div>
+        <nav>
+            <div class="ham">
+                <label for="menu-icon" class="menu-icon">
+                    <input id="menu-icon" class="burger-btn" type="checkbox">
+                    <i class='bx bx-menu' ></i>
+                </label>
+            </div>
+            <a class ="logo" href="index.html">night owls</a>
+            <a class="ham" href="profile.html"><img src="user.png" alt="user"></a>
+            <ul class="navmenu">
+                <li><a class="active" href="index.html">HOME</a></li>
+                <li><div class="dropdown"><a>Accessories</a>
+                    <div class="dropdown-content">
+                        <a href="gaming.html">Gaming</a>
+                        <a href="setup.html">Setup</a>
+                        <a href="collections.html">Collections</a>
+                    </div>
+                </div></li>
+                <li><div class="dropdown"><a>Devices and hardware</a>
+                    <div class="dropdown-content">
+                        <a href="prebuilt.html">Pre built PC</a>
+                        <a href="laptops.html">Laptops</a>
+                        <a href="consoles.html">Consoles</a>
+                        <a href="pc_components.html">PC components</a>
+                        <a href="build_your_pc.html">Build your PC</a>
+                    </div>
+                </div></li>
+                <li><div class="dropdown"><a>Games guider</a>
+                    <div class="dropdown-content">
+                        <a href="requirements.html">Requirements</a>
+                        <a href="hardware.html">Hardware enhancments</a>
+                    </div>
+                </div></li>
+            </ul>
+            <ul class="acc">
+                <li><a ><button onclick="darkmode()"><img class="cart_image" src="dark-mode.png" alt="darkmode"></button></a></li>
+                <li><a href="cart.html"><img class="cart_image" src="shopping-cart.png" alt="cart"></a></li>
+                <li><a href="profile.html"><img src="user.png" alt="user"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="get_inspired"></div>
+    <main>
+        <form>
+            <div class="radio-input">
+                <input type="radio" value="1" id="mouse" name="accs" checked = "">
+                <label for="mouse">Mouse</label>
+                <input type="radio" value="2" id="keyboard" name="accs">
+                <label for="keyboard">Keyboard</label>
+                <input type="radio" value="3" id="headset" name="accs">
+                <label for="headset">Headset</label>
+                <input type="radio" value="4" id="mic" name="accs">
+                <label for="mic">Mic</label>
+            </div>
+        </form>
+        <div class="grid-tags mouse"><p>Mouse</p></div>
+        <div class="new-arrival-grid cg mouse">
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6528/6528045_sd.jpg;maxHeight=640;maxWidth=550"></div>
+                <p>Glorious - Model O- Minus Wireless Optical Honeycomb RGB Gaming Mouse - Matte White - Matte White</p>
+                <button role="button" class="btn">3,350 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6475/6475703_sd.jpg;maxHeight=640;maxWidth=550"></div>
+                <p>Razer - Basilisk V3 Wired Optical Gaming Mouse with Chroma RBG Lighting - Black</p>
+                <button role="button" class="btn">2,150 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6512/6512122_sd.jpg;maxHeight=640;maxWidth=550"></div>
+                <p>Logitech - G502 X PLUS LIGHTSPEED Wireless Gaming Mouse with HERO 25K Sensor - Black</p>
+                <button role="button" class="btn">6,360 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6440/6440537_sd.jpg;maxHeight=640;maxWidth=550"></div>
+                <p>Logitech - PRO X SUPERLIGHT Lightweight Wireless Optical Gaming Mouse with HERO 25K Sensor - White</p>
+                <button role="button" class="btn">5,500 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6508/6508305_sd.jpg;maxHeight=640;maxWidth=550"></div>
+                <p> Logitech - G915 LIGHTSPEED Full-size Wireless Mechanical GL Clicky Switch Gaming Keyboard with RGB Backlighting - Black</p>
+                <button role="button" class="btn">1,600 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6439/6439122_sd.jpg;maxHeight=640;maxWidth=550"></div>
+                <p>SteelSeries - Rival 3 Lightweight Wireless Optical Gaming Mouse with Brilliant Prism RGB Lighting - Black</p>
+                <button role="button" class="btn">2,400 EGP</button>
+            </div>
+        </div>
+        <div class="grid-tags keyboard"><p>Keyboard</p></div>
+        <div class="new-arrival-grid cg keyboard">
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6283/6283508_sd.jpg;maxHeight=640;maxWidth=550"></div>
+                <p>HyperX - Alloy Core Full-size Wired Gaming Membrane Keyboard with RGB Lighting - Black</p>
+                <button role="button" class="btn">1,900 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6519/6519673_sd.jpg;maxHeight=640;maxWidth=550"></div>
+                <p>SteelSeries - Apex Pro 2023 TKL Wired Mechanical OmniPoint 2.0 Adjustable Actuation Switch Gaming Keyboard with RGB Backlighting - Black</p>
+                <button role="button" class="btn">7,200 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6425/6425362_sd.jpg;maxHeight=640;maxWidth=550"></div>
+                <p>Razer - Blackwidow V3 Full Size Wired Mechanical Green Clicky Tactile Switch Gaming Keyboard with Chroma RGB Backlighting - Quartz</p>
+                <button role="button" class="btn">4,785 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6531/6531755_sd.jpg;maxHeight=640;maxWidth=550"></div>
+                <p>Razer - BlackWidow V4 Pro Full Size Wired Mechanical Green Switch Gaming Keyboard with Chroma RGB - Black</p>
+                <button role="button" class="btn">9,200 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6360/6360844_sd.jpg;maxHeight=640;maxWidth=550"></div>
+                <p> Logitech - G915 LIGHTSPEED Full-size Wireless Mechanical GL Clicky Switch Gaming Keyboard with RGB Backlighting - Black</p>
+                <button role="button" class="btn">12,000 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6396/6396205ld.jpg;maxHeight=640;maxWidth=550"></div>
+                <p>SteelSeries - Apex 3 Full Size Wired Membrane Whisper Quiet Switch Gaming Keyboard with 10 zone RGB Backlighting - Black</p>
+                <button role="button" class="btn">2,390 EGP</button>
+            </div>
+        </div>
+        <div class="grid-tags headset"><p>Headset</p></div>
+        <div class="new-arrival-grid cg headset">
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6420/6420879cv11d.jpg;maxHeight=640;maxWidth=550"></div>
+                <p>Logitech - G PRO X Wireless Gaming Headset for PC - Black</p>
+                <button role="button" class="btn">6,600 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6420/6420856_sd.jpg;maxHeight=640;maxWidth=550"></div>
+                <p>Logitech - G733 LIGHTSPEED Wireless Gaming Headset for PS4, PC - Black</p>
+                <button role="button" class="btn">5,500 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6538/6538905_sd.jpg;maxHeight=640;maxWidth=550"></div>
+                <p>Razer - Kraken Kitty Edition V2 Pro Wired Gaming Headset - Quartz Pink</p>
+                <button role="button" class="btn">9,570 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6572/6572603_sd.jpg;maxHeight=640;maxWidth=550"></div>
+                <p>Logitech - Astro A50 X LIGHTSPEED Wireless with PLAYSYNC Gaming Headset + Base Station for Xbox Series X|S, PS5, PC/MAC - Black</p>
+                <button role="button" class="btn">18,950 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6518/6518171_sd.jpg;maxHeight=640;maxWidth=550"></div>
+                <p>HyperX - Cloud Stinger 2 Wired Gaming Headset for PC - Black</p>
+                <button role="button" class="btn">2,300 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6431/6431194_rd.jpg;maxHeight=640;maxWidth=550"></div>
+                <p>HyperX - Cloud Stinger Core Wireless Gaming Headset for PC, PS5, and PS4 - White</p>
+                <button role="button" class="btn">1,800 EGP</button>
+            </div>
+        </div>
+        <div class="grid-tags mic"><p>Mic</p></div>
+        <div class="new-arrival-grid cg mic">
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6434/6434274cv12d.jpg;maxHeight=640;maxWidth=550"></div>
+                <p>HyperX - QuadCast S Wired Multi-Pattern USB Electret Condenser Microphone</p>
+                <button role="button" class="btn">8,000 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6367/6367477_sd.jpg;maxHeight=640;maxWidth=550"></div>
+                <p>Blue Microphones - Yeti X Professional USB Multi-Pattern Condenser Microphone</p>
+                <button role="button" class="btn">6,700 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/4758/4758301cv22d.jpg;maxHeight=640;maxWidth=550"></div>
+                <p>Blue Microphones - Blue Yeti Professional Multi-Pattern USB Condenser Microphone</p>
+                <button role="button" class="btn">4,700 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6428/6428835_sd.jpg;maxHeight=640;maxWidth=550"></div>
+                <p>Samson - Q9U XLR/USB Dynamic Broadcast Microphone</p>
+                <button role="button" class="btn">7,100 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6530/6530807_rd.jpg;maxHeight=640;maxWidth=550"></div>
+                <p>RØDE - NT-USB+ Wired Condenser Microphone with USB Type-C</p>
+                <button role="button" class="btn">8,200 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6556/6556752_sd.jpg;maxHeight=640;maxWidth=550"></div>
+                <p>Logitech - Yeti Orb Wired Cardioid Condenser Gaming Microphone with LIGHTSYNC RGB Lights</p>
+                <button role="button" class="btn">1,600 EGP</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-content">
+                <h4><a href="#">Welcome to our website</a></h4>
+                <ul>
+                    <li><a href="about-us.html">About us</a></li>
+                    <li><a href="contact_us.html">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h4>Accessories</h4>
+                <ul>
+                    <li><a href="gaming.html">Gaming</a></li>
+                    <li><a href="setup.html">Setup</a></li>
+                    <li><a href="collections">Collections</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h4>Devices and hardware</h4>
+                <ul>
+                    <li><a href="prebuilt.html">Pre built PC</a></li>
+                    <li><a href="laptops.html">Laptops</a></li>
+                    <li><a href="consoles.html">Consoles</a></li>
+                    <li><a href="pc_components.html">PC components</a></li>
+                    <li><a href="build_your_pc.html">Build your PC</a></li>
 
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h4>Games guider</h4>
+                <ul>
+                    <li><a href="requirements.html">Requirements</a></li>
+                    <li><a href="hardware.html">Hardware enhancements</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h4>Cart</h4>
+                <ul>
+                    <li><a href="card.html">View cart</a></li>
+                    <li><a href="#">Clear cart</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h4>Account</h4>
+                <ul>
+                    <li><a href="log%20in.html">Login</a></li>
+                    <li><a href="registration.html">Sign-up</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
 </body>
 </html>

@@ -28,6 +28,14 @@ body{
     :has(#desk:checked) .desk {display: flex;}
     :has(#chair:checked) .chair {display: flex;}
     :has(#light:checked) .light {display: flex;}
+    /* gaming page */
+    :has(#mouse:checked) .mouse {display: flex;}
+    :has(#keyboard:checked) .keyboard {display: flex;}
+    :has(#headset:checked) .headset {display: flex;}
+    :has(#mic:checked) .mic {display: flex;}
+    /* hardware */
+    :has(#pc:checked) .pc {display: block;}
+    :has(#laptop:checked) .laptop {display: block;}
 }
 *{
     transition: all 0.3s;
@@ -227,6 +235,64 @@ body{
     flex-direction: column;
     justify-content: space-between;
     margin: 7.5px;
+    .grid-tags{
+        margin-top: 20px;
+    }
+    .cg{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+#gaming{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 7.5px;
+    .get_inspired{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1{
+            color: var(--text);
+        }
+        a{
+            appearance: none;
+            text-decoration: none;
+        }
+    }
+    main{
+        .radio-input{
+            margin: 15px 0;
+            display: flex;
+            flex-direction: row;
+            input{display: none;}
+            label{
+                color: var(--text);
+                margin: 10px;
+                border: 2px solid var(--border);
+                height: 40px;
+                display: flex;
+                align-items: center;
+                padding: 0 20px;
+                border-radius: 20px;
+                justify-content: space-between;
+            }
+        }
+        .radio-input label:hover{
+            border: 2px solid rgba(95, 82, 211, 0.50);
+            transform: scale(1.15);
+        }
+        .radio-input label:active{
+            border: 2px solid rgba(95, 82, 211, 0.50);
+            transform: scale(0.95);
+        }
+        .radio-input input:checked + label{
+            border: 2px solid rgba(95, 82, 211, 1);
+        }
+        .cg,.grid-tags{display: none;}
+    }
     .grid-tags{
         margin-top: 20px;
     }
@@ -830,19 +896,15 @@ body{
     flex-direction: column;
     justify-content: space-between;
     margin: 7.5px;
-
-    main p {
-        color: rgba(255, 255, 255, 0.90);
-        margin-left: 20px;
-        display: inline-block;
-
-    }
-
+   .title {
+       color: var(--text);
+       opacity: 0.9;
+       margin-left: 20px;
+       display: inline-block;
+   }
     .grid-tags {
         margin-bottom: 20px;
     }
-
-
     .radio-input{
         margin: 15px 0;
         display: flex;
@@ -860,6 +922,7 @@ body{
             color: var(--text);
         }
     }
+    .pc,.laptop{display: none;}
     .radio-input label:hover{
         border: 2px solid rgba(95, 82, 211, 0.50);
         transform: scale(1.15);
@@ -983,6 +1046,10 @@ header{
         align-items: center;
         .logo{
             margin: 0 0 0 20px;
+            img{
+                width: 80px;
+                height: 80px;
+            }
         }
         .navmenu{
             padding: 0;
@@ -1373,6 +1440,3 @@ footer {
         }
     }
 }
-
-
-
