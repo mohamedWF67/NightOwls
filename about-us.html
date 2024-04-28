@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <title>About Night Owls</title>
+    <link rel="icon" href="nav_icon.png">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
 <div id="about-us">
@@ -16,7 +17,7 @@
         <div class="hamburger">
             <ul>
                 <li><a class="active" href="index.html">HOME</a></li>
-                <hr>
+                <div class="hr"></div>
                 <div class="dropmenu">
                     <li><label for="ass">
                         <input id="ass" class="dropmenu-btn" type="checkbox">
@@ -29,7 +30,7 @@
                         <li><a href="collections.html">Collections</a>
                     </div>
                 </div>
-                <hr>
+                <div class="hr"></div>
                 <div class="dropmenu">
                     <li><label for="dh">
                         <input id="dh" class="dropmenu-btn" type="checkbox">
@@ -41,10 +42,9 @@
                         <li><a href="laptops.html">Laptops</a>
                         <li><a href="consoles.html">Consoles</a>
                         <li><a href="pc_components.html">PC components</a>
-                        <li><a href="build_your_pc.html">Build your PC</a>
                     </div>
                 </div>
-                <hr>
+                <div class="hr"></div>
                 <div class="dropmenu">
                     <li><label for="gg">
                         <input id="gg" class="dropmenu-btn" type="checkbox">
@@ -53,26 +53,28 @@
                     </li>
                     <div class="dropmenu-content gg">
                         <li><a href="requirements.html">Requirements</a>
-                        <li><a href="hardware.html">Hardware enhancments</a>
+                        <li><a href="hardware.html">Hardware enhancements</a>
                     </div>
-                </div><hr>
+                </div>
+                <div class="hr"></div>
             </ul>
             <div class="hamburger-extra">
+                <a href="log%20in.html"><i class='bx bxs-log-in-circle' ></i></a>
                 <a href="cart.html"><img src="shopping-cart.png" alt="cart"></a>
-                <a><button id="dark2"><img src="dark-mode.png" alt="darkmode"></button></a>
+                <a><button onclick="darkmode()"><img src="dark-mode.png" alt="darkmode"></button></a>
             </div>
         </div>
         <nav>
             <div class="ham">
                 <label for="menu-icon" class="menu-icon">
                     <input id="menu-icon" class="burger-btn" type="checkbox">
-                    <i class='bx bx-menu' ></i>
+                    <i class='bx bx-menu'></i>
                 </label>
             </div>
-            <a class ="logo" href="index.html">night owls</a>
-            <a class="ham" href="profile.html"><img src="user.png" alt="user"></a>
+            <a class ="logo" href="index.html"><img src="nightowls3.png" ></a>
+            <a class="ham"><img src="user.png" alt="user"></a>
             <ul class="navmenu">
-                <li><a class="active" href="index.html">HOME</a></li>
+                <li><a href="index.html">HOME</a></li>
                 <li><div class="dropdown"><a>Accessories</a>
                     <div class="dropdown-content">
                         <a href="gaming.html">Gaming</a>
@@ -86,7 +88,6 @@
                         <a href="laptops.html">Laptops</a>
                         <a href="consoles.html">Consoles</a>
                         <a href="pc_components.html">PC components</a>
-                        <a href="build_your_pc.html">Build your PC</a>
                     </div>
                 </div></li>
                 <li><div class="dropdown"><a>Games guider</a>
@@ -97,9 +98,14 @@
                 </div></li>
             </ul>
             <ul class="acc">
-                <li><a ><button id="dark1"><img class="cart_image" src="dark-mode.png" alt="darkmode"></button></a></li>
+                <li><a ><button onclick="darkmode()"><img class="cart_image" src="dark-mode.png" alt="darkmode"></button></a></li>
                 <li><a href="cart.html"><img class="cart_image" src="shopping-cart.png" alt="cart"></a></li>
-                <li><a href="profile.html"><img src="user.png" alt="user"></a></li>
+                <li><div class="dropdown"><a><img src="user.png" alt="user"></a>
+                    <div class="dropdown-content">
+                        <a href="log%20in.html">Log in</a>
+                        <a href="registration.html">Sign up</a>
+                    </div>
+                </div></li>
             </ul>
         </nav>
     </header>
@@ -120,17 +126,11 @@
     <footer>
         <div class="footer">
             <div class="footer-content">
-                <h4><a href="#">Welcome to our website</a></h4>
-                <ul>
-                    <li><a href="about-us.html">About us</a></li>
-                </ul>
-            </div>
-            <div class="footer-content">
                 <h4>Accessories</h4>
                 <ul>
                     <li><a href="gaming.html">Gaming</a></li>
                     <li><a href="setup.html">Setup</a></li>
-                    <li><a href="collections">Collections</a></li>
+                    <li><a href="collections.html">Collections</a></li>
                 </ul>
             </div>
             <div class="footer-content">
@@ -140,22 +140,19 @@
                     <li><a href="laptops.html">Laptops</a></li>
                     <li><a href="consoles.html">Consoles</a></li>
                     <li><a href="pc_components.html">PC components</a></li>
-                    <li><a href="build_your_pc.html">Build your PC</a></li>
-
                 </ul>
             </div>
             <div class="footer-content">
                 <h4>Games guider</h4>
                 <ul>
                     <li><a href="requirements.html">Requirements</a></li>
-                    <li><a href="hardware.html">hardware enhancments</a></li>
+                    <li><a href="hardware.html">Hardware enhancements</a></li>
                 </ul>
             </div>
             <div class="footer-content">
                 <h4>Cart</h4>
                 <ul>
-                    <li><a href="card.html">View cart</a></li>
-                    <li><a href="#">Clear cart</a></li>
+                    <li><a href="cart.html">View cart</a></li>
                     <li><a href="checkout.html">Checkout</a></li>
                 </ul>
             </div>
@@ -166,19 +163,26 @@
                     <li><a href="registration.html">Sign-up</a></li>
                 </ul>
             </div>
+            <div class="footer-content">
+                <h4>Night Owls</h4>
+                <ul>
+                    <li><a href="about-us.html">About us</a></li>
+                    <li><a href="contact_us.html">Contact us</a></li>
+                </ul>
+            </div>
         </div>
-
+        <div class="hr"></div>
+        <div class="footer-copyright">
+            <p>Copyright &copy; 2024 NightOwls Group<br>  Email:<a href="mailto:info@bue.edu.eg">info@bue.edu.eg</a></p>
+            <div class="socials">
+                <ul>
+                    <li class="social_icon facebook"><a href="https://www.facebook.com/thebritishuniversityegypt"><i class="bx bxl-facebook"></i></a></li>
+                    <li class="social_icon instagram"><a href="https://www.instagram.com/thebritishuniversityinegypt/"><i class="bx bxl-instagram"></i></a></li>
+                    <li class="social_icon youtube"><a href="https://www.youtube.com/@thebritishuniversityinegyp985"><i class="bx bxl-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
-    <script>
-        var dark1 = document.getElementById("dark1");
-        dark1.onclick = function () {
-            document.body.classList.toggle("dark")
-        }
-        var dark2 = document.getElementById("dark2");
-        dark2.onclick = function () {
-            document.body.classList.toggle("dark")
-        }
-    </script>
 </div>
 </body>
 </html>

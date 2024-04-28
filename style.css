@@ -63,7 +63,7 @@ body{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: "Barlow Condensed",sans-serif;
+        font-family: "Barlow semi Condensed",sans-serif;
         font-weight: bold;
         transition: all 0.3s ease;
     }
@@ -189,7 +189,7 @@ body{
     }
 }
 #Prebuilt{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -204,7 +204,7 @@ body{
     }
 }
 #laptops{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -219,6 +219,10 @@ body{
     }
 }
 #consoles{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 7.5px;
     .grid-tags{
         margin-top: 20px;
@@ -230,7 +234,7 @@ body{
     }
 }
 #pc_comp{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -245,7 +249,7 @@ body{
     }
 }
 #gaming{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -303,7 +307,7 @@ body{
     }
 }
 #setup{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -361,7 +365,7 @@ body{
     }
 }
 #collecs{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -376,7 +380,7 @@ body{
     }
 }
 #about-us{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -410,18 +414,20 @@ body{
     }
 }
 #contact_us{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 7.5px;
     main{
         margin-top: 10px;
-        *{box-sizing: border-box;
-        color: var(--text)}
         display: flex;
         flex-direction: column;
         align-items: center;
+        *{
+            box-sizing: border-box;
+            color: var(--text);
+        }
     }
     .contact_us{
         box-shadow: rgba(9, 30, 66, 0.25) 0 4px 8px -2px, rgba(9, 30, 66, 0.08) 0 0 0 1px;
@@ -441,7 +447,10 @@ body{
                 justify-content: space-between;
                 padding: 0 10px;
                 align-items: center;
-                .btn{margin: 0}
+                .btn{
+                    margin: 0;
+                    color: snow;
+                }
             }
             .co{
                 min-width: 500px;
@@ -583,12 +592,12 @@ body{
     }
 }
 #checkout{
+    background-image: linear-gradient(315deg, #704bfc 0%, #51358c 74%);
     .crd{display: none;}
     .csh{display: none;}
     .inspay{display: none;}
     min-height: 100vh;
     display: flex;
-    margin: 7.5px;
     justify-content: center;
     align-items: center;
     .checkout{
@@ -797,7 +806,7 @@ body{
     .slider::-webkit-scrollbar{
         display: none;
     }
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -848,7 +857,7 @@ body{
     }
 }
 #req{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -904,7 +913,7 @@ body{
 
 }
 #hardware {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1007,6 +1016,11 @@ header{
         .hamburger-extra{
             margin: 10px 20px;
             float: right;
+            a i{
+                font-size: 60px;
+                color: black;
+                margin-bottom: 5px;
+            }
             img{
                 width:60px
             }
@@ -1343,7 +1357,7 @@ footer {
     --grid: #171717;
     --shadow: rgba(255,255,255,0.2);
     --border: rgba(255, 255, 255, 0.25);
-    --hr: rgba(255, 255, 255,0.50);
+    --hr: rgba(255, 255, 255,0.25);
 }
 .dark{
     --text: #000000;
@@ -1437,6 +1451,9 @@ footer {
 }
 @media (max-width: 375px) {
     #buycard main{
+        transform: scale(0.80);
+    }
+    #checkout main{
         transform: scale(0.80);
     }
     header{

@@ -1,10 +1,400 @@
 <!DOCTYPE html>
+<!--suppress ALL -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Build Your PC</title>
+    <link rel="icon" href="nav_icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
+<div id="bldyourpc">
+    <header>
+        <div class="hamburger">
+            <ul>
+                <li><a class="active" href="index.html">HOME</a></li>
+                <hr>
+                <div class="dropmenu">
+                    <li><label for="ass">
+                        <input id="ass" class="dropmenu-btn" type="checkbox">
+                        <a>Accessories<i class='bx bx-chevron-down'></i></a>
+                    </label>
+                    </li>
+                    <div class="dropmenu-content ass">
+                        <li><a href="gaming.html">Gaming</a>
+                        <li><a href="setup.html">Setup</a>
+                        <li><a href="collections.html">Collections</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="dropmenu">
+                    <li><label for="dh">
+                        <input id="dh" class="dropmenu-btn" type="checkbox">
+                        <a>Devices and hardware<i class='bx bx-chevron-down'></i></a>
+                    </label>
+                    </li>
+                    <div class="dropmenu-content  dh">
+                        <li><a href="prebuilt.html">Pre built PC</a>
+                        <li><a href="laptops.html">Laptops</a>
+                        <li><a href="consoles.html">Consoles</a>
+                        <li><a href="pc_components.html">PC components</a>
+                        <li><a href="build_your_pc.html">Build your PC</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="dropmenu">
+                    <li><label for="gg">
+                        <input id="gg" class="dropmenu-btn" type="checkbox">
+                        <a class="drop-btn">Games guider<i class='bx bx-chevron-down'></i></a>
+                    </label>
+                    </li>
+                    <div class="dropmenu-content gg">
+                        <li><a href="requirements.html">Requirements</a>
+                        <li><a href="hardware.html">Hardware enhancements</a>
+                    </div>
+                </div><hr>
+            </ul>
+            <div class="hamburger-extra">
+                <a href="cart.html"><img src="shopping-cart.png" alt="cart"></a>
+                <a><button onclick="darkmode()"><img src="dark-mode.png" alt="darkmode"></button></a>
+            </div>
+        </div>
+        <nav>
+            <div class="ham">
+                <label for="menu-icon" class="menu-icon">
+                    <input id="menu-icon" class="burger-btn" type="checkbox">
+                    <i class='bx bx-menu' ></i>
+                </label>
+            </div>
+            <a class ="logo" href="index.html">night owls</a>
+            <a class="ham" href="profile.html"><img src="user.png" alt="user"></a>
+            <ul class="navmenu">
+                <li><a class="active" href="index.html">HOME</a></li>
+                <li><div class="dropdown"><a>Accessories</a>
+                    <div class="dropdown-content">
+                        <a href="gaming.html">Gaming</a>
+                        <a href="setup.html">Setup</a>
+                        <a href="collections.html">Collections</a>
+                    </div>
+                </div></li>
+                <li><div class="dropdown"><a>Devices and hardware</a>
+                    <div class="dropdown-content">
+                        <a href="prebuilt.html">Pre built PC</a>
+                        <a href="laptops.html">Laptops</a>
+                        <a href="consoles.html">Consoles</a>
+                        <a href="pc_components.html">PC components</a>
+                        <a href="build_your_pc.html">Build your PC</a>
+                    </div>
+                </div></li>
+                <li><div class="dropdown"><a>Games guider</a>
+                    <div class="dropdown-content">
+                        <a href="requirements.html">Requirements</a>
+                        <a href="hardware.html">Hardware enhancments</a>
+                    </div>
+                </div></li>
+            </ul>
+            <ul class="acc">
+                <li><a ><button onclick="darkmode()"><img class="cart_image" src="dark-mode.png" alt="darkmode"></button></a></li>
+                <li><a href="cart.html"><img class="cart_image" src="shopping-cart.png" alt="cart"></a></li>
+                <li><a href="profile.html"><img src="user.png" alt="user"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="grid-tags"><p>CPU</p></div>
+        <div class="new-arrival-grid cg">
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6560/6560418_sd.jpg;maxHeight=640;maxWidth=550"></div>
+                <p>Intel - Core i9-14900K 14th Gen 24-Core 32-Thread - 4.4GHz (6.0GHz Turbo) Socket LGA 1700 Unlocked Desktop Processor</p>
+                <button role="button" class="btn">30,450 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6560/6560420_sd.jpg;maxHeight=640;maxWidth=550"></div>
+                <p>Intel - Core i7-14700K 14th Gen 20-Core 28-Thread - 4.3GHz (5.6GHz Turbo) Socket LGA 1700 Unlocked Desktop Processor</p>
+                <button role="button" class="btn">23,610 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6560/6560423_sd.jpg;maxHeight=640;maxWidth=550"></div>
+                <p>Intel - Core i5-14600K 14th Gen 14-Core 20-Thread - 4.0GHz (5.3GHz Turbo) Socket LGA 1700 Unlocked Desktop Processor</p>
+                <button role="button" class="btn">16,599 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6519/6519479cv11d.jpg;maxHeight=640;maxWidth=550"></div>
+                <p> AMD - Ryzen 5 7600X 6-core - 12-Thread 4.7GHz (5.3 GHz Max Boost) Socket AM5 Desktop Processor - Silver</p>
+                <button role="button" class="btn">12,760 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6537/6537139cv11d.jpg;maxHeight=640;maxWidth=550"></div>
+                <p>AMD - Ryzen 7 7800X3D 8-Core - 16-Thread 4.2 GHz (5.0 GHz Max Boost) Socket AM5 Unlocked Desktop Processor - Black</p>
+                <button role="button" class="btn">20,420 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6519/6519470cv11d.jpg;maxHeight=640;maxWidth=550"></div>
+                <p>AMD - Ryzen 9 7950X 16-core - 32-Thread 4.5GHz (5.7 GHz Max Boost) Socket AM5 Desktop Processor - Silver</p>
+                <button role="button" class="btn">30,450 EGP</button>
+            </div>
+        </div>
+        <div class="grid-tags"><p>Motherboard</p></div>
+        <div class="new-arrival-grid cg">
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6523/6523725_sd.jpg;maxHeight=200;maxWidth=300"></div>
+                <p> ASUS - ROG STRIX Z790-E GAMING WIFI (Socket LGA 1700) USB 3.2 Intel Motherboard</p>
+                <button role="button" class="btn">20,450 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6530/6530193_sd.jpg;maxHeight=200;maxWidth=300"></div>
+                <p> MSI - MAG B760 TOMAHAWK WIFI DDR4 (Socket LGA 1700) USB 3.2 Intel Motherboard - Black</p>
+                <button role="button" class="btn">7,620 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6523/6523718_sd.jpg;maxHeight=200;maxWidth=300"></div>
+                <p>ASUS - ROG MAXIMUS Z790 HERO (Socket LGA 1700) USB 3.2 Intel Motherboard</p>
+                <button role="button" class="btn">87,599 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6523/6523178_sd.jpg;maxHeight=200;maxWidth=300"></div>
+                <p> GIGABYTE - B650 AORUS ELITE AX (Socket AM5) USB 3.2 Gen2 AMD Motherboard - Black</p>
+                <button role="button" class="btn">10,199 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6523/6523721_sd.jpg;maxHeight=200;maxWidth=300"></div>
+                <p>ASUS - ROG STRIX B650E-F GAMING WIFI (Socket AM5) USB 3.2 AMD Motherboard</p>
+                <button role="button" class="btn">15,640 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6523/6523724_sd.jpg;maxHeight=200;maxWidth=300"></div>
+                <p>ASUS - ROG CROSSHAIR X670E HERO (Socket AM5) USB-C Gen2 AMD Motherboard with LED Lighting
+                </p>
+                <button role="button" class="btn">34,000 EGP</button>
+            </div>
+        </div>
+        <div class="grid-tags"><p>GPU</p></div>
+        <div class="new-arrival-grid cg">
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6570/6570219cv1d.jpg;maxHeight=200;maxWidth=300"></div>
+                <p> NVIDIA - GeForce RTX 4080 SUPER 16GB GDDR6X Graphics Card - Titanium/Black</p>
+                <button role="button" class="btn">50,000 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6136/6136515_sd.jpg;maxHeight=200;maxWidth=300"></div>
+                <p> XFX - AMD Radeon RX 580 GTS XXX Edition 8GB GDDR5 PCI Express 3.0 Graphics Card - Black</p>
+                <button role="button" class="btn">6,750 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6513/6513906_sd.jpg;maxHeight=200;maxWidth=300"></div>
+                <p>XFX - SPEEDSTER SWFT210 AMD Radeon RX 6650XT Core 8GB GDDR6 PCI Express 4.0 Gaming Graphics Card - Black</p>
+                <button role="button" class="btn">12.499 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6528/6528715_sd.jpg;maxHeight=200;maxWidth=300"></div>
+                <p>XFX - Speedster MERC310 AMD Radeon RX 7900XTX 24GB GDDR6 PCI Express 4.0 Gaming Graphics Card - Black</p>
+                <button role="button" class="btn">123,103 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6521/6521518_sd.jpg;maxHeight=200;maxWidth=300"></div>
+                <p>GIGABYTE - NVIDIA GeForce RTX 4090 Gaming OC 24GB GDDR6X PCI Express 4.0 Graphics Card - Black</p>
+                <button role="button" class="btn">75,756 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6549/6549640_sd.jpg;maxHeight=200;maxWidth=300"></div>
+                <p>ASUS - NVIDIA GeForce RTX 4060 Overclock 8GB GDDR6 PCI Express 4.0 Graphics Card - Black</p>
+                <button role="button" class="btn">80,496 EGP</button>
+            </div>
+        </div>
+        <div class="grid-tags"><p>RAM</p></div>
+        <div class="new-arrival-grid cg">
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6256/6256216_sd.jpg;maxHeight=640;maxWidth=550"></div>
+                <p> CORSAIR - Vengeance RGB PRO 16GB (2PK x 8GB) 3200MHz DDR4</p>
+                <button role="button" class="btn">3,300 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src=https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6562/6562314_sd.jpg;maxHeight=640;maxWidth=550></div>
+                <p> CORSAIR - VENGEANCE 32GB (2x16GB) 6000MHz DDR5 </p>
+                <button role="button" class="btn">4,500 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6457/6457798_sd.jpg;maxHeight=640;maxWidth=550"></div>
+                <p>CORSAIR - VENGEANCE RGB PRO SL 32GB (2PK x 16GB) 3600MHz DDR4</p>
+                <button role="button" class="btn">6,400 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6542/6542590_sd.jpg;maxHeight=640;maxWidth=550"></div>
+                <p>CORSAIR - VENGEANCE 64GB (2PK 32GB) 6400MHz PC5-51200 DDR5 C32</p>
+                <button role="button" class="btn">10,529 EGP</button>
+            </div>
+        </div>
+        <div class="grid-tags"><p>SSD</p></div>
+        <div class="new-arrival-grid cg">
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6509/6509715cv11d.jpg;maxHeight=2000;maxWidth=2000"></div>
+                <p> Crucial - P3 Plus 1TB Internal SSD PCIe Gen 4 x4 NVMe</p>
+                <button role="button" class="btn">3,589 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6351/6351466_sd.jpg;maxHeight=640;maxWidth=550"></div>
+                <p>Samsung - 970 EVO Plus 1TB Internal SSD PCIe Gen 3 x4 NVMe</p>
+                <button role="button" class="btn">3,876 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6559/6559270_sd.jpg;maxHeight=640;maxWidth=550"></div>
+                <p>Samsung - 990 PRO 4TB Internal SSD PCle Gen 4x4 NVMe</p>
+                <button role="button" class="btn">15,794 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6485/6485009_sd.jpg;maxHeight=640;maxWidth=550"></div>
+                <p>Samsung - 980 PRO Heatsink 2TB Internal SSD PCIe Gen 4 x4 NVMe</p>
+                <button role="button" class="btn">15,900 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://m.media-amazon.com/images/I/71JM21OBzhL._AC_SL1500_.jpg"></div>
+                <p> Kingston NV2 NVMe PCIe 4.0 SSD 250G M.2 2280 SNV2S/250G</p>
+                <button role="button" class="btn">1,700 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://www.egprices.com/images/md/lexar-nm710-2tb-m-2-pcie-gen4x4-nvme-ssd-1.jpg"></div>
+                <p>Lexar NM710 2TB M.2 PCIe Gen4x4 Nvme SSD</p>
+                <button role="button" class="btn">7,500 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://www.egprices.com/images/large/lexar-nm790-512gb-pcie-gen4-nvme-m-2-2280-ssd-1.jpg"></div>
+                <p>Lexar NM790 512GB PCIe Gen4 NVMe M.2 2280 SSD</p>
+                <button role="button" class="btn">2,899 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://www.egprices.com/images/md/crucial-p3-2tb-pcie-m-2-2280-ssd-1.png"></div>
+                <p>Crucial P3 2TB PCIe M.2 2280 SSD</p>
+                <button role="button" class="btn">6,500 EGP</button>
+            </div>
+        </div>
+        <div class="grid-tags"><p>Case</p></div>
+        <div class="new-arrival-grid cg">
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6424/6424213_sd.jpg;maxHeight=200;maxWidth=300"></div>
+                <p> CORSAIR - 4000D AIRFLOW ATX MidTower Case - Black</p>
+                <button role="button" class="btn">5,756 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6507/6507400_sd.jpg;maxHeight=200;maxWidth=300"></div>
+                <p>NZXT - H7 Flow ATX Mid-Tower Case - White</p>
+                <button role="button" class="btn">5,612 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6529/6529621_sd.jpg;maxHeight=200;maxWidth=300"></div>
+                <p>NZXT - H9 Flow ATX Mid-Tower Case with Dual Chamber - Black</p>
+                <button role="button" class="btn">5,599 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6522/6522038_sd.jpg;maxHeight=200;maxWidth=300"></div>
+                <p>NZXT - H5 Flow ATX Mid-Tower Case - Black</p>
+                <button role="button" class="btn">5,103 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6494/6494853_sd.jpg;maxHeight=200;maxWidth=300"></div>
+                <p>Cooler Master - MasterBox MCB-NR200-KNNN-S00 Mini ITX/Mini DTX Mini-tower Case - Black</p>
+                <button role="button" class="btn">5,756 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6577/6577421_sd.jpg;maxHeight=200;maxWidth=300"></div>
+                <p>Thermaltake - The Tower 300 Micro ATX Case - Black</p>
+                <button role="button" class="btn">7,499 EGP</button>
+            </div>
+        </div>
+        <div class="grid-tags"><p>PSU</p></div>
+        <div class="new-arrival-grid cg">
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6577/6577051_sd.jpg;maxHeight=200;maxWidth=300"></div>
+                <p>CORSAIR - HXi Series HX1200i 80 PLUS Platinum Cybenetics Platinum Fully Modular ATX Power Supply - Black</p>
+                <button role="button" class="btn">15,250 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6500/6500780_sd.jpg;maxHeight=200;maxWidth=300"></div>
+                <p>EVGA - SuperNOVA 1300W GT Power Supply</p>
+                <button role="button" class="btn">12,612 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6538/6538048_sd.jpg;maxHeight=200;maxWidth=300"></div>
+                <p>NZXT - C1200 80 Plus Gold Fully-Modular Low Noise ATX 3.0 PSU - Black</p>
+                <button role="button" class="btn">10,599 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6524/6524434cv17d.jpg;maxHeight=200;maxWidth=300"></div>
+                <p>MSI MPG A850G PCIE 5 - Full Modular – 80 Plus Gold 850W - 100% Japanese 105°C Capacitors – ATX 3.0 Gaming Power Supply - Black</p>
+                <button role="button" class="btn">7,630 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6510/6510218_sd.jpg;maxHeight=200;maxWidth=300"></div>
+                <p>Thermaltake - Toughpower GF2 ARGB 750W 80 PLUS Gold Fully Modular ATX Power Supply - Black</p>
+                <button role="button" class="btn">8,200 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6477/6477388_sd.jpg;maxHeight=200;maxWidth=300"></div>
+                <p>CORSAIR - RM Series RM750 750W ATX 80 PLUS GOLD Certified Fully Modular Power Supply - White</p>
+                <button role="button" class="btn">5,200 EGP</button>
+            </div>
+            <div class="argrid ar">
+                <div class="arimg"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6562/6562433cv17d.jpg;maxHeight=200;maxWidth=300"></div>
+                <p>MSI - A750GL PCIE 5 750W ATX 3.0 Full Modular 80 Plus Gold Gaming Power Supply - Black</p>
+                <button role="button" class="btn">4,400 EGP</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-content">
+                <h4><a href="#">Welcome to our website</a></h4>
+                <ul>
+                    <li><a href="about-us.html">About us</a></li>
+                    <li><a href="contact_us.html">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h4>Accessories</h4>
+                <ul>
+                    <li><a href="gaming.html">Gaming</a></li>
+                    <li><a href="setup.html">Setup</a></li>
+                    <li><a href="collections">Collections</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h4>Devices and hardware</h4>
+                <ul>
+                    <li><a href="prebuilt.html">Pre built PC</a></li>
+                    <li><a href="laptops.html">Laptops</a></li>
+                    <li><a href="consoles.html">Consoles</a></li>
+                    <li><a href="pc_components.html">PC components</a></li>
+                    <li><a href="build_your_pc.html">Build your PC</a></li>
 
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h4>Games guider</h4>
+                <ul>
+                    <li><a href="requirements.html">Requirements</a></li>
+                    <li><a href="hardware.html">Hardware enhancements</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h4>Cart</h4>
+                <ul>
+                    <li><a href="card.html">View cart</a></li>
+                    <li><a href="#">Clear cart</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h4>Account</h4>
+                <ul>
+                    <li><a href="log%20in.html">Login</a></li>
+                    <li><a href="registration.html">Sign-up</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
 </body>
 </html>
