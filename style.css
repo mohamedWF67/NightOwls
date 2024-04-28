@@ -852,12 +852,25 @@ body{
         }
     }
 }
-#hardware{
+#hardware {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 7.5px;
+
+    main p {
+        color: rgba(255, 255, 255, 0.90);
+        margin-left: 20px;
+        display: inline-block;
+
+    }
+
+    .grid-tags {
+        margin-bottom: 20px;
+    }
+
+
     .radio-input{
         margin: 15px 0;
         display: flex;
