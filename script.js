@@ -1,9 +1,9 @@
 //buycard
 document.getElementById("slider").style.scrollBehavior = "smooth";
 function submitcard(x,y,z){
-    allnumeric(x);
-    expire(y);
     cardno(z);
+    expire(y);
+    allnumeric(x);
 }
 function allnumeric(inputtxt)
 {
@@ -28,7 +28,7 @@ function expire(inputtxt)
     }
     else
     {
-        alert('Please input numeric characters only');
+        alert('Please enter a valid expire date');
         inputtxt.focus();
         return false;
     }
@@ -42,7 +42,7 @@ function cardno(inputtxt)
     }
     else
     {
-        alert('Please input numeric characters only');
+        alert('Please enter a valid card');
         inputtxt.focus();
         return false;
     }
