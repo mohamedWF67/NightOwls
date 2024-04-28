@@ -300,34 +300,6 @@ body{
     flex-direction: column;
     justify-content: space-between;
     margin: 7.5px;
-    .radio-input{
-        margin: 15px 0;
-        display: flex;
-        flex-direction: row;
-        input{display: none;}
-        label{
-            margin: 10px;
-            border: 2px solid var(--border);
-            height: 40px;
-            display: flex;
-            align-items: center;
-            padding: 0 20px;
-            border-radius: 20px;
-            justify-content: space-between;
-            color: var(--text);
-        }
-    }
-    .radio-input label:hover{
-        border: 2px solid rgba(95, 82, 211, 0.50);
-        transform: scale(1.15);
-    }
-    .radio-input label:active{
-        border: 2px solid rgba(95, 82, 211, 0.50);
-        transform: scale(0.95);
-    }
-    .radio-input input:checked + label{
-        border: 2px solid rgba(95, 82, 211, 1);
-    }
     .grid-tags{
         margin-top: 20px;
     }
