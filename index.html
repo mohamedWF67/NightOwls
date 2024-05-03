@@ -66,9 +66,11 @@
         </div>
     <nav>
         <div class="ham">
-            <label for="menu-icon" class="menu-icon">
-            <input id="menu-icon" class="burger-btn" type="checkbox">
-                <i class='bx bx-menu'></i>
+            <input type="checkbox" id="checkbox" class="burger-btn">
+            <label for="checkbox" class="toggle">
+                <div class="bars" id="bar1"></div>
+                <div class="bars" id="bar2"></div>
+                <div class="bars" id="bar3"></div>
             </label>
         </div>
         <a class ="logo" href="index.html"><img src="nightowls3.png" ></a>
@@ -111,7 +113,7 @@
 </header>
 <main>
         <div class="grid-item item2">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/GejXnyse-b4?si=NtX7eFIrxrOJjLD_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe  src="https://www.youtube.com/embed/GejXnyse-b4?si=NtX7eFIrxrOJjLD_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     <div class="grid-tags"><p>New Arrivals</p><div class="grid-mover">
         <button role="button" class="left" onclick="scrolll(document.querySelector('.na'))"><i class='bx bx-chevron-left'></i></button>
@@ -283,5 +285,10 @@
     </div>
 </footer>
 </div>
+<script>
+    document.querySelector(".na").style.scrollBehavior = "smooth";
+    document.querySelector(".bs").style.scrollBehavior = "smooth";
+    document.querySelector(".pre").style.scrollBehavior = "smooth";
+</script>
 </body>
 </html>

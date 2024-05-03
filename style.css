@@ -532,103 +532,76 @@ body{
     }
 }
 #cart{
-    min-height: 100vh;
+    min-height: 98vh;
     display: flex;
     margin: 7.5px;
     justify-content: center;
     align-items: center;
-    .cart{
-        flex-wrap: wrap;
-        border-radius: 20px;
-        width: 1000px;
-        display: flex;
-        justify-content: center;
-        padding: 20px 20px 40px 20px;
-        gap: 10px;
+    .cart-box{
+        width: 750px;
+        min-height: 450px;
+        padding: 10px;
         background: white;
-        .co{
-            padding: 0 10px;
-            width: 300px;
-            h1{
-                margin: 5px 0 5px 15px;
-                font-size: 27.5px;
+        border-radius: 20px;
+        gap: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .products-box{
+            box-shadow: rgba(9, 30, 66, 0.25) 0 4px 8px -2px, rgba(9, 30, 66, 0.08) 0 0 0 1px;
+            background-color: rgba(255, 255, 255, 0.074);
+            overflow-y: auto;
+            padding: 10px;
+            border-radius: 20px;
+            width: 71%;
+            height: 450px;
+            .prod-card{
+                box-shadow: rgba(9, 30, 66, 0.25) 0 4px 8px -2px, rgba(9, 30, 66, 0.08) 0 0 0 1px;
+                background-color: rgba(255, 255, 255, 0.074);
+                border-radius: 20px;
+                align-content: center;
+                margin: 10px 0;
+                padding: 10px;
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                .prod-img{
+                    padding: 5px;
+                    box-shadow: rgba(9, 30, 66, 0.25) 0 4px 8px -2px, rgba(9, 30, 66, 0.08) 0 0 0 1px;
+                    display: flex;
+                    align-items: center;
+                    max-width: 120px;
+                    border-radius: 20px;
+                    img{
+                        border-radius: 10px;
+                        width: 100%;
+                        object-fit: contain;
+                    }
+                }
+                p{
+                    font-size: 14px;
+                    max-width: 250px;
+                }
+                .btn{
+                    font-size: 14px;
+                    height: fit-content;
+                    margin: 0 5px 0 auto;
+                }
             }
         }
-    }
-    .box {
-        display: flex;
-        align-items: center;
-        width: 500px;
-        margin: 10px;
-        border-color: #704bfc;
-        box-sizing: border-box;
-        border-width: 2px;
-        border-radius: 8px;
-        border-style: solid;
-        transform: translateX(-160px);
-    }
-    .Cimg {
-        width: 100px;
-        flex: 0 0 auto;
-        margin-right: 10px;
-    }
-    .Cp {
-        flex: 1;
-        text-align: left;
-        margin-bottom: 5px;
-    }
-    .price {
-        flex: 1;
-        margin: 55px;
-        text-align: center;
-        padding: 0;
-        border-radius: 8px;
-        border-width: 2px;
-        border-color: #704bfc;
-        border-style:solid;
-        background-color: #704bfc;
-        color: white;
-        font-weight: 500;
-    }
-    #Ch11{
-        transform: translateX(30px);
-    }
-    #Ch1{
-        transform: translateX(190px);
-    }
-    .Sbox{
-        display: block;
-        align-items: center;
-        width: 400px;
-        height: 689px;
-        margin: 10px;
-        border-color:#704bfc;
-        box-sizing: border-box;
-        border-width:2px ;
-        border-radius:8px;
-        border-style:solid;
-        transform: translatex(50px);
-        text-align: center;
-    }
-    #Ch2{
-        justify-content: center;
-        text-align: center;
-        padding-left: 20px;
-        padding-right: 10px;
-        transform: translateY(70%);
-    }
-    .proceed_btn{
-        margin-top: auto;
-        display: flex;
-        justify-content: center;
-        a{
-            appearance: none;
-            text-decoration: none;
+        .prod_prices{
+            box-shadow: rgba(9, 30, 66, 0.25) 0 4px 8px -2px, rgba(9, 30, 66, 0.08) 0 0 0 1px;
+            background-color: rgba(255, 255, 255, 0.074);
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            border-radius: 20px;
+            h1{text-align: center}
+            p{
+                margin: 16px;
+            }
         }
-        .btn{
-            width: 220px;
-        }
-        transform: translateY(600%);
     }
 }
 #checkout{
@@ -1069,17 +1042,65 @@ header{
             text-shadow: 2px 2px 4px var(--glow);
         }
     }
-    .burger-btn{
+
+    #checkbox {
         display: none;
-        border-radius: 20px;
-        width: 30px;
-        height: 30px;
+    }
+
+    .toggle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        transition-duration: .5s;
+    }
+    .bars {
+        width: 100%;
+        height: 4px;
+        background-color: black;
+        border-radius: 4px;
+    }
+    #bar2 {
+        transition-duration: .8s;
+    }
+
+    #bar1,#bar3 {
+        width: 70%;
+    }
+
+    #checkbox:checked + .toggle .bars {
+        position: absolute;
+        transition-duration: .5s;
+    }
+
+    #checkbox:checked + .toggle #bar2 {
+        transform: scaleX(0);
+        transition-duration: .5s;
+    }
+
+    #checkbox:checked + .toggle #bar1 {
+        width: 100%;
+        transform: rotate(45deg);
+        transition-duration: .5s;
+    }
+
+    #checkbox:checked + .toggle #bar3 {
+        width: 100%;
+        transform: rotate(-45deg);
+        transition-duration: .5s;
+    }
+
+    #checkbox:checked + .toggle {
+        transition-duration: .5s;
+        transform: rotate(180deg);
     }
     .dropmenu-btn{
         display: none;
-    }
-    .menu-icon{
-        font-size: 40px;
     }
     .dropdown {
         position: relative;
@@ -1168,7 +1189,7 @@ main{
         align-content: center;
         display: flex;
         width: 100%;
-        height: 400px;
+    aspect-ratio: 17/8;
         iframe
         {
             width: calc(100% - 20px);
@@ -1491,6 +1512,17 @@ footer {
                 min-width: 20px;
             }
         }
+    }
+    #cart{
+        .cart-box {
+        width: 90vw;
+            .products-box{
+                width: 100%;
+            }
+            .prod_prices{
+                width: 100%;
+            }
+    }
     }
 }
 @media (max-width: 375px) {
