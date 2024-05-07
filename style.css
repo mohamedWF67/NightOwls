@@ -448,6 +448,13 @@ body{
         padding: 20px;
         width: 45%;
     }
+    .absw{
+        width: 100%;
+        h1{
+            text-align: center;
+        }
+        img{width: 100%}
+    }
     .us:hover{
         transform: scale(1.01);
         box-shadow: var(--accent) 0 1px 8px;
