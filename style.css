@@ -532,9 +532,9 @@ body{
     }
 }
 #cart{
-    min-height: 98vh;
+    background-image: linear-gradient(315deg, #704bfc 0%, #51358c 74%);
+    min-height: 100vh;
     display: flex;
-    margin: 7.5px;
     justify-content: center;
     align-items: center;
     .cart-box{
@@ -548,6 +548,7 @@ body{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+        box-shadow: 0 4px 16px 1px #2b2336;
         .products-box{
             box-shadow: rgba(9, 30, 66, 0.25) 0 4px 8px -2px, rgba(9, 30, 66, 0.08) 0 0 0 1px;
             background-color: rgba(255, 255, 255, 0.074);
@@ -564,17 +565,21 @@ body{
                 margin: 10px 0;
                 padding: 10px;
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
                 gap: 10px;
+                .prod-pay-data{
+                    display: flex;
+                    flex-direction: row;
+                }
                 .prod-img{
-                    padding: 5px;
+                    padding: 7.5px;
                     box-shadow: rgba(9, 30, 66, 0.25) 0 4px 8px -2px, rgba(9, 30, 66, 0.08) 0 0 0 1px;
                     display: flex;
                     align-items: center;
                     max-width: 120px;
                     border-radius: 20px;
                     img{
-                        border-radius: 10px;
+                        aspect-ratio: 1/1;
                         width: 100%;
                         object-fit: contain;
                     }
@@ -582,10 +587,10 @@ body{
                 p{
                     font-size: 14px;
                     max-width: 250px;
+                    margin: 0 0 0 10px;
                 }
                 .btn{
                     font-size: 14px;
-                    height: fit-content;
                     margin: 0 5px 0 auto;
                 }
             }
@@ -603,6 +608,10 @@ body{
             }
         }
     }
+    .prod-card:hover {
+        transform: scale(1.01);
+        box-shadow: var(--accent) 0 1px 8px;
+    }
 }
 #checkout{
     background-image: linear-gradient(315deg, #704bfc 0%, #51358c 74%);
@@ -614,6 +623,7 @@ body{
     justify-content: center;
     align-items: center;
     .checkout{
+        box-shadow: 0 4px 16px 1px #2b2336;
         flex-wrap: wrap;
         border-radius: 20px;
         width: fit-content;
@@ -885,6 +895,16 @@ body{
         justify-content: center;
         align-items: center;
     }
+    select{
+        height: 35px;
+        border-radius: 20px;
+        outline: 0;
+        border: 2px solid rgba(0, 0, 0, 0.15);
+        box-shadow: rgba(9, 30, 66, 0.25) 0 4px 8px -2px, rgba(9, 30, 66, 0.08) 0 0 0 1px;
+        background-color: rgba(255, 255, 255, 0.074);
+        color: var(--text);
+        padding: 0 10px;
+    }
     .req_table_box{
         display: none;
         flex-direction: column;
@@ -901,7 +921,7 @@ body{
         table,th,td{
             color: var(--text);
             border-radius:20px;
-            border: 2px solid rgba(255, 255, 255, 0.074);
+            border: 2px solid var(--table);
             border-collapse: collapse;
             padding: 8px;
             caption{
@@ -1111,7 +1131,7 @@ header{
             position: absolute;
             background-color: var(--background);
             min-width: 160px;
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 4px 16px 2px var(--shadow);
             z-index: 1;
             a {
                 color: var(--text);
@@ -1157,6 +1177,9 @@ header{
         .acc {
             margin: 0 20px 0 0;
             padding: 0;
+            li{
+                max-width: 55px;
+            }
             .dropdown-content{
                 transform: translate(-100px);
             }
@@ -1423,6 +1446,7 @@ footer {
     --shadow: rgba(255,255,255,0.2);
     --border: rgba(255, 255, 255, 0.25);
     --hr: rgba(255, 255, 255,0.25);
+    --table: rgba(255, 255, 255, 0.074);
 }
 .dark{
     --text: #000000;
@@ -1435,6 +1459,7 @@ footer {
     --shadow: rgba(0,0,0,0.6);
     --border: rgba(0,0,0,0.25);
     --hr: rgba(0,0,0,0.50);
+    --table: rgba(0, 0, 0, 0.074);
 }
 @media (min-width: 806px) {
     nav{
